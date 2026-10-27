@@ -241,6 +241,30 @@ let selected = relics[0]?.id || null;
 let activeKeyword = "";
 let upgradeLevel = 0;
 let collapsed = {};
+let selectedCharacter = null;
+let activeView = "relicPage";
+
+const characters = [
+  "Tuấn Hưng đẹp trai",
+  "BII",
+  "Matsumu Kouru",
+  "Rô bót",
+  "Instant Death",
+  "Hân Đẹp Trai"
+];
+const characterFields = [
+  ["Giới tính", "gender"],
+  ["Tuổi", "age"],
+  ["Thanh máu", "health"],
+  ["Sức khoẻ", "physicalHealth"],
+  ["Chú lực", "cursedEnergy"],
+  ["Tốc độ", "speed"],
+  ["Nhạy bén", "agility"],
+  ["Trí tuệ", "intelligence"],
+  ["Tinh thần", "mentality"],
+  ["Độ tin cậy", "reliability"],
+  ["Vật dụng mang theo", "items"]
+];
 
 const $ = (id) => document.getElementById(id);
 
@@ -528,6 +552,42 @@ function render() {
   $("newBtn").style.display = "inline-block";
 }
 
+function renderCharacters() {
+  const list = $("characterList");
+  const details = $("characterDetails");
+  const hasSelectedCharacter = selectedCharacter !== null;
+  list.classList.toggle("hidden", hasSelectedCharacter);
+  details.classList.toggle("hidden", !hasSelectedCharacter);
+
+  if (!hasSelectedCharacter) {
+    list.innerHTML = characters
+      .map(
+        (name, index) =>
+          `<button class="character-button" data-character="${index}">${esc(name)}</button>`
+      )
+      .join("");
+    details.innerHTML = "";
+    return;
+  }
+
+  const name = characters[selectedCharacter];
+  details.innerHTML = `
+    <button class="character-close" type="button" aria-label="Đóng thông tin nhân vật">×</button>
+    <h3>${esc(name)}</h3>
+    <div class="character-stats">
+      <div class="character-stat"><strong>Tên:</strong> ${esc(name)}</div>
+      ${characterFields
+        .map(
+          ([label]) =>
+            `<div class="character-stat ${
+              label === "Vật dụng mang theo" ? "full" : ""
+            }"><strong>${label}:</strong> Chưa cập nhật</div>`
+        )
+        .join("")}
+    </div>
+  `;
+}
+
 function openForm(r = null) {
   $("form").reset();
   $("formTitle").textContent = r ? "Edit Relic" : "Create Relic";
@@ -703,6 +763,32 @@ $("importFile").onchange = async (e) => {
     alert("JSON không hợp lệ.");
   }
   e.target.value = "";
+};
+
+document.querySelector(".tabs").onclick = (e) => {
+  const tab = e.target.closest("[data-view]");
+  if (!tab) return;
+
+  activeView = tab.dataset.view;
+  document.querySelectorAll(".tabs .tab").forEach((item) => {
+    item.classList.toggle("active", item === tab);
+  });
+  $("relicPage").classList.toggle("hidden", activeView !== "relicPage");
+  $("characterPage").classList.toggle("hidden", activeView !== "characterPage");
+  if (activeView === "characterPage") renderCharacters();
+};
+
+$("characterList").onclick = (e) => {
+  const button = e.target.closest("[data-character]");
+  if (!button) return;
+  selectedCharacter = Number(button.dataset.character);
+  renderCharacters();
+};
+
+$("characterDetails").onclick = (e) => {
+  if (!e.target.closest(".character-close")) return;
+  selectedCharacter = null;
+  renderCharacters();
 };
 
 render();
