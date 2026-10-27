@@ -2,8 +2,11 @@
 <html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Relic Archive</title>
 <link rel="stylesheet" href="styles.css"></head><body>
 <header class="top"><h1>Relic Archive</h1><div><button class="tinybtn" title="Refresh" onclick="location.reload()">↻</button></div></header>
-<nav class="tabs"><button class="tab active" data-view="relicPage">Relics</button><button class="tab" data-view="relicPage">Relic Crafting</button><button class="tab" data-view="characterPage">Character</button></nav>
-<main>
+<nav class="tabs">
+  <button class="tab active" data-view="relicPage">Relics</button>
+  <button class="tab" data-view="craftingPage">Relic Crafting</button>
+  <button class="tab" data-view="characterPage">Character</button>
+</nav><main>
 <section id="relicPage">
 <div class="filterrow"><button class="filtericon" title="Filter">▽</button><input class="control" id="searchTrait" placeholder="Search keyword / condition..."><input class="control" id="searchFilter" placeholder="Filter by relic name..."></div>
 <div class="iconrow" id="iconFilters"></div>
