@@ -14,14 +14,39 @@
 <h2 class="sectiontitle" id="countTitle">Relics</h2><div id="groups"></div>
 <div class="actions"><button class="smallbtn primary" id="newBtn">＋ Create Relic</button><button class="smallbtn" id="exportBtn">Export JSON</button><button class="smallbtn" id="importBtn">Import JSON</button><input type="file" id="importFile" accept=".json" hidden></div>
 </section>
+  <section id="craftingPage" class="hidden">
+  <h2 class="sectiontitle">Relic Crafting</h2>
+  <p>Relic crafting content will appear here.</p>
+</section>
 <section id="characterPage" class="hidden">
 <h2 class="sectiontitle">Characters</h2>
 <div id="characterList" class="character-list"></div>
 <article id="characterDetails" class="character-details hidden"></article>
 </section>
 </main>
-<div class="modalshade" id="modal"><div class="formmodal"><button class="closemodal" id="closeModal">×</button><h2 id="formTitle">Create Relic</h2><form id="form"><div class="formgrid">
-<div class="field"><label>Name *</label><input id="name" required></div><div class="field"><label>Rarity</label><select id="rarity"><option>Common</option><option>Uncommon</option><option>Rare</option><option>Epic</option><option>Ancient</option><option>Mythical</option><option>Mythic</option><option>Pillar</option></select></div>
+<div class="modalshade" id="modal">
+  <div class="formmodal">
+    <button class="closemodal" id="closeModal">×</button>
+    <h2 id="formTitle">Create Relic</h2>
+    <form id="form">
+      <div class="formgrid">
+<div class="field">
+  <label>Name *</label>
+  <input id="name" required>
+</div>
+        <div class="field">
+          <label>Rarity</label>
+          <select id="rarity">
+            <option>Common</option>
+            <option>Uncommon</option>
+            <option>Rare</option>
+            <option>Epic</option>
+            <option>Ancient</option>
+            <option>Mythical</option>
+            <option>Mythic</option>
+            <option>Pillar</option>
+          </select>
+        </div>
 <div class="field"><label>Tier</label><select id="tier"><option>I</option><option>II</option><option>III</option><option selected>IV</option><option>V</option><option>VI</option><option>VII</option><option>VIII</option><option>IX</option><option>X</option><option>XI</option><option>XII</option><option>XIII</option><option>XIV</option><option>XV</option><option>XVI</option><option>XVII</option><option>XVIII</option><option>XIX</option><option>XX</option></select></div><div class="field"><label>Keyword (status / affinity, comma separated)</label><input id="keywords" placeholder="Burn, Bleed, Poison, Poise, Tremor, Freeze, Light, Dark, Lightning, Wind, Earth"></div>
 <div class="field"><label>Image path (optional)</label><input id="image" placeholder="assets/relic-image.png"></div><div class="field"><label>Type / faction restriction</label><input id="faction"></div>
 <div class="field full"><label>Description</label><textarea id="description"></textarea></div><div class="field full"><label>Always-active effect</label><textarea id="always"></textarea></div><div class="field full"><label>Conditional effect</label><textarea id="conditional"></textarea></div><div class="field full"><label>Unique Effect</label><textarea id="unique"></textarea></div><div class="field full"><label>Way to obtain</label><textarea id="obtain" placeholder="Boss / chest / shop / event / leaderboard / craft recipe"></textarea></div><div class="field full"><label>Craft materials (comma separated relic names)</label><input id="craftsFrom" placeholder="Relic One, Relic Two"></div>
