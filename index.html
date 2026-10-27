@@ -2,13 +2,20 @@
 <html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Relic Archive</title>
 <link rel="stylesheet" href="styles.css"></head><body>
 <header class="top"><h1>Relic Archive</h1><div><button class="tinybtn" title="Refresh" onclick="location.reload()">↻</button></div></header>
-<nav class="tabs"><div class="tab active">Relics</div><div class="tab">Relic Crafting</div></nav>
+<nav class="tabs"><button class="tab active" data-view="relicPage">Relics</button><button class="tab" data-view="relicPage">Relic Crafting</button><button class="tab" data-view="characterPage">Character</button></nav>
 <main>
+<section id="relicPage">
 <div class="filterrow"><button class="filtericon" title="Filter">▽</button><input class="control" id="searchTrait" placeholder="Search keyword / condition..."><input class="control" id="searchFilter" placeholder="Filter by relic name..."></div>
 <div class="iconrow" id="iconFilters"></div>
 <div class="showcase" id="showcase"></div>
 <h2 class="sectiontitle" id="countTitle">Relics</h2><div id="groups"></div>
 <div class="actions"><button class="smallbtn primary" id="newBtn">＋ Create Relic</button><button class="smallbtn" id="exportBtn">Export JSON</button><button class="smallbtn" id="importBtn">Import JSON</button><input type="file" id="importFile" accept=".json" hidden></div>
+</section>
+<section id="characterPage" class="hidden">
+<h2 class="sectiontitle">Characters</h2>
+<div id="characterList" class="character-list"></div>
+<article id="characterDetails" class="character-details hidden"></article>
+</section>
 </main>
 <div class="modalshade" id="modal"><div class="formmodal"><button class="closemodal" id="closeModal">×</button><h2 id="formTitle">Create Relic</h2><form id="form"><div class="formgrid">
 <div class="field"><label>Name *</label><input id="name" required></div><div class="field"><label>Rarity</label><select id="rarity"><option>Common</option><option>Uncommon</option><option>Rare</option><option>Epic</option><option>Ancient</option><option>Mythical</option><option>Mythic</option><option>Pillar</option></select></div>
