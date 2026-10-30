@@ -90,7 +90,7 @@ const seed = [
     description: "Một mô hình vòng quay ngựa gỗ thu nhỏ với rèm đỏ thẫm, đường viền vàng xỉn và những con ngựa gỗ kỳ dị.",
     always: "Khi bắt đầu trận: nhận 300 Bloodfeast.\\nBloodfeast nhận từ Bleed tăng gấp đôi.\\nKhi Bloodfiend dùng kỹ năng tiêu thụ Bloodfeast, cuối lượt tấn công tiêu thụ thêm lượng bằng lượng kỹ năng đã tiêu thụ.",
     conditional: "[A Feast for the Family] — Cần ít nhất 2 Bloodfiend đang tham chiến. Khi Bloodfiend gây Bleed, tăng Bloodfeast từ đòn đó thêm 25%.",
-    unique: "[The Carousel's Chosen] \n Cần ít nhất 3 Bloodfiend và 1.000 Bloodfeast. Khi dùng kỹ năng tiêu thụ Bloodfeast: +1 Final Power và +15% sát thương nếu mục tiêu có Bleed.",
+    unique: "[The Carousel's Chosen] \\nCần ít nhất 3 Bloodfiend và 1.000 Bloodfeast. Khi dùng kỹ năng tiêu thụ Bloodfeast: +1 Final Power và +15% sát thương nếu mục tiêu có Bleed.",
     obtain: "Có tỷ lệ xuất hiện khi đánh bại Bloodfiend Boss.",
     upgrade: "Không thể nâng cấp.",
     buy: "",
