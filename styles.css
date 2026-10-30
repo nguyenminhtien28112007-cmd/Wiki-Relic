@@ -142,11 +142,6 @@ main{
                 overflow:hidden
             }
             .relicart 
-            .bigicon{
-                font-size:88px;
-                filter:drop-shadow(0 3px 2px #0009)
-            }
-            .relicart 
             .bigimage{
                 width:100%;
                 height:100%;
@@ -214,6 +209,9 @@ main{
                 text-decoration:underline
             }
             .cond{color:#159327}
+            .trigger-start{color:#ff9f00;font-weight:700}
+            .trigger-hit{color:var(--red);font-weight:700}
+            .trigger-damaged{color:#ffcb00;font-weight:700}
             .kw{color:#bf793d;
                 text-decoration:underline
             }
@@ -274,11 +272,6 @@ main{
                     place-items:center;
                     position:relative;
                     overflow:hidden
-                }
-                .giftart 
-                .emoji{
-                    font-size:48px;
-                    filter:drop-shadow(0 2px 2px #0008)
                 }
                 .giftart 
                 .giftimage{

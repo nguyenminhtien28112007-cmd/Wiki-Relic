@@ -4,18 +4,15 @@ const seed = [
     name: "The Unbroken Form",
     rarity: "Ancient",
     tier: "IV",
-    icon: "🗡️",
     keywords: ["Poise"],
     faction: "",
     description: "Một thanh kiếm gỗ cũ kỹ, không hoa văn trang trí. Càng tập trung vào chuyển động, thanh kiếm càng nhẹ nhàng và chính xác.",
     always: "+10% Poise Power.\\nĐòn đánh chính xác nhận +5% Critical Chance.",
     conditional: "[Perfect Alignment] — Sau 3 đòn đánh liên tiếp không hụt và không bị gián đoạn, đòn kế tiếp nhận +20% Critical Chance. Đánh hụt hoặc bị gián đoạn sẽ đặt lại bộ đếm.",
-    unique: "",
     obtain: "Có tỷ lệ xuất hiện sau thử thách đòi hỏi độ chính xác.",
     upgrade: "",
     buy: "",
     sell: "",
-    floor: "",
     abno: "",
     lore: "“A blade does not need to be sharp to cut.”"
   },
@@ -24,18 +21,15 @@ const seed = [
     name: "The Unwritten Truth",
     rarity: "Ancient",
     tier: "IV",
-    icon: "📖",
     keywords: ["Poise", "Light"],
     faction: "",
     description: "Một cuốn sách cũ kỹ với bìa da bong tróc, trang giấy ố vàng và những trang trắng tự viết lại sau mỗi trận chiến.",
     always: "Mỗi lượt, đòn đánh đầu tiên gây thêm 1 Poise Count.\\nKhi đồng minh có Poise đánh trúng, hồi 2 SP.",
     conditional: "[Read Between the Lines] — Cần ít nhất 5 Poise. Kỹ năng tiếp theo nhận +1 Final Power.",
-    unique: "",
     obtain: "Thưởng từ sự kiện khám phá thư viện cổ.",
     upgrade: "",
     buy: "",
     sell: "",
-    floor: "",
     abno: "",
     lore: "Sự thật không được viết ra vẫn có thể được nhìn thấy."
   },
@@ -44,18 +38,15 @@ const seed = [
     name: "One With The Mind",
     rarity: "Mythical",
     tier: "VIII",
-    icon: "🧠",
     keywords: ["Poise", "Light"],
     faction: "Crafted Relic",
     description: "Relic kết hợp giữa The Unbroken Form và The Unwritten Truth, đại diện cho sự thống nhất giữa hành động và nhận thức.",
     always: "+10% Poise Power.\\nKhi đánh chính xác, nhận 1 [Clarity], tối đa 3.",
     conditional: "[Unified Focus] — Cần 3 [Clarity]. Đòn tiếp theo nhận +20% Critical Chance; sau khi kích hoạt, đặt lại Clarity.",
-    unique: "[Mind and Motion] — Đòn chí mạng tiêu thụ 1 Clarity để gây thêm 15% sát thương.",
     obtain: "Craft từ The Unbroken Form và The Unwritten Truth.",
     upgrade: "",
     buy: "",
     sell: "",
-    floor: "",
     abno: "",
     lore: "Hành động và nhận thức không còn đối lập."
   },
@@ -64,18 +55,15 @@ const seed = [
     name: "The Last Audience",
     rarity: "Mythical",
     tier: "VIII",
-    icon: "🎭",
     keywords: ["Poise", "Dark"],
     faction: "",
     description: "Một chiếc mặt nạ sân khấu màu trắng ngà, với những vết nứt và nụ cười hoàn hảo đến đáng sợ.",
     always: "+15% Critical Chance.\\n+10% Poise Power.\\nĐòn chí mạng cho 1 cộng dồn [Applause], mỗi cộng dồn tăng 2% Critical Damage, tối đa 5.",
     conditional: "[Flawless Performance] — Sau 3 đòn liên tiếp không hụt và không bị gián đoạn, đòn kế tiếp nhận +20% Critical Chance.",
-    unique: "[The Audience Is Silent] — Khi đạt 5 [Applause], đòn chí mạng kế tiếp tiêu thụ toàn bộ cộng dồn để nhận +30% Critical Damage.",
     obtain: "Có tỷ lệ xuất hiện khi hoàn thành trận chiến mà không nhận sát thương.",
     upgrade: "Không thể nâng cấp.",
     buy: "",
     sell: "",
-    floor: "",
     abno: "",
     lore: ""
   },
@@ -84,18 +72,15 @@ const seed = [
     name: "Crimson Carousel",
     rarity: "Mythical",
     tier: "VIII",
-    icon: "🎠",
     keywords: ["Bleed", "Dark"],
     faction: "Bloodfiend-exclusive",
     description: "Một mô hình vòng quay ngựa gỗ thu nhỏ với rèm đỏ thẫm, đường viền vàng xỉn và những con ngựa gỗ kỳ dị.",
     always: "Khi bắt đầu trận: nhận 300 Bloodfeast.\\nBloodfeast nhận từ Bleed tăng gấp đôi.\\nKhi Bloodfiend dùng kỹ năng tiêu thụ Bloodfeast, cuối lượt tấn công tiêu thụ thêm lượng bằng lượng kỹ năng đã tiêu thụ.",
     conditional: "[A Feast for the Family] — Cần ít nhất 2 Bloodfiend đang tham chiến. Khi Bloodfiend gây Bleed, tăng Bloodfeast từ đòn đó thêm 25%.",
-    unique: "[The Carousel's Chosen] \\nCần ít nhất 3 Bloodfiend và 1.000 Bloodfeast. Khi dùng kỹ năng tiêu thụ Bloodfeast: +1 Final Power và +15% sát thương nếu mục tiêu có Bleed.",
     obtain: "Có tỷ lệ xuất hiện khi đánh bại Bloodfiend Boss.",
     upgrade: "Không thể nâng cấp.",
     buy: "",
     sell: "",
-    floor: "",
     abno: "",
     lore: "“Round and round, the feast goes on.”"
   },
@@ -104,18 +89,15 @@ const seed = [
     name: "The Eternal Banquet",
     rarity: "Pillar",
     tier: "XX",
-    icon: "🕯️",
     keywords: ["Bleed", "Dark"],
     faction: "Bloodfiend-exclusive",
     description: "Một chiếc bàn tiệc thu nhỏ bằng gỗ mun, trang trí đường chạm khắc đỏ thẫm, đĩa bạc và nến đỏ.",
     always: "Khi bắt đầu trận: nhận 500 Bloodfeast.\\nBloodfeast nhận từ Bleed tăng 100%.\\nBloodfiend gây +10% sát thương lên mục tiêu đang có Bleed.",
     conditional: "[A Toast to the Blood] — Cần ít nhất 3 Bloodfiend và 1.500 Bloodfeast. Khi dùng kỹ năng tiêu thụ Bloodfeast: +1 Final Power và +20% sát thương nếu mục tiêu có Bleed.",
-    unique: "[The Feast That Never Ends] — Cần ít nhất 3 Bloodfiend và 2.000 Bloodfeast để kích hoạt [Grand Banquet]. Khi hoạt động, kỹ năng tiêu thụ ít nhất 300 Bloodfeast nhận +30% Critical Damage và thêm +15% sát thương nếu mục tiêu có Bleed.",
     obtain: "Craft từ Crimson Carousel và một Relic Bloodfiend chuyên về Bloodfeast.",
     upgrade: "Không thể nâng cấp.",
     buy: "",
     sell: "",
-    floor: "",
     abno: "",
     lore: "“A feast without an ending. A family without a grave.”"
   },
@@ -124,24 +106,38 @@ const seed = [
     name: "Malevolent Shrine",
     rarity: "Mythic",
     tier: "XII",
-    icon: "⛩️",
     keywords: ["Bleed", "Dark"],
     faction: "Ryomen Sukuna-exclusive",
     description: "Một mảnh cổng đền thờ cổ phủ máu khô và những đường vân đen đỏ. Khi kích hoạt, không gian dường như bị chia cắt bởi những đường chém vô hình.",
     always: "[The Disgraced] — +15% Critical Chance; +20% sát thương lên mục tiêu có Bleed. Gây sát thương lên mục tiêu có Bleed nhận 1 [Dismantle], tối đa 5.\\n[Cleave] — Tấn công mục tiêu có Bleed nhận +10% Critical Damage.",
     conditional: "[The King of Curses] — Sau khi gây Bleed lên ít nhất 3 mục tiêu: kỹ năng tiếp theo +1 Final Power và +20% sát thương lên mục tiêu có Bleed.",
-    unique: "[Malevolent Shrine: Open] — Cần ít nhất 3 [Dismantle] và 2 mục tiêu có Bleed. Kích hoạt trong một lượt, tăng sát thương lên mục tiêu có Bleed; cuối trạng thái tiêu thụ Dismantle để gây thêm sát thương.",
     obtain: "Chỉ nhận khi sử dụng Ryomen Sukuna và hoàn thành thử thách [The King Above All].",
     upgrade: "Không thể nâng cấp.",
     buy: "",
     sell: "",
-    floor: "",
     abno: "",
     lore: ""
+  },
+  {
+    id: "crocodiles-tears",
+    name: "Crocodile's Tears",
+    rarity: "Legendary",
+    tier: "VII",
+    keywords: ["Tremor", "Dark"],
+    faction: "Không",
+    description: "Nước mắt của cá sấu khổng lồ",
+    always: "[Bắt đầu trận] Nhận 1 Hard As An Reptile.",
+    conditional: "[Khi đánh dính] Áp 2 Bleed potency và count lên kẻ địch. Nếu kẻ địch có 10 Bleed potency gây (Bleed Potency x Bleed Count) sát thương bóng tối lên kẻ địch (Số Bleed potency được đếm đến 5).\\n[Khi bị dính sát thương] Áp (sát thương nhận / Bleed Potency trên kẻ địch) khiên lên toàn bộ đồng minh; 1 lần mỗi lượt.",
+    obtain: "Đánh bại Cá sấu khổng lồ",
+    buy: "Không thể mua",
+    sell: "2000",
+    abno: "Cá sấu khổng lồ",
+    lore: "?"
   }
 ];
 
 const KEY = "relicArchiveMirrorDungeon_v3";
+const CROCODILE_MIGRATION_KEY = `${KEY}_crocodilesTears_v1`;
 
 let relics;
 try {
@@ -159,12 +155,41 @@ if (activeRelics.length !== relics.length) {
   localStorage.setItem(KEY, JSON.stringify(relics));
 }
 
+if (!localStorage.getItem(CROCODILE_MIGRATION_KEY)) {
+  const crocodileTears = seed.find((r) => r.id === "crocodiles-tears");
+  if (crocodileTears && !relics.some((r) => r.id === crocodileTears.id)) {
+    relics.push({ ...crocodileTears, keywords: [...crocodileTears.keywords] });
+    localStorage.setItem(KEY, JSON.stringify(relics));
+  }
+  localStorage.setItem(CROCODILE_MIGRATION_KEY, "true");
+}
+
+function removeObsoleteFields(items) {
+  let changed = false;
+  for (const r of items) {
+    for (const field of ["floor", "unique", "uniquePlusPlus", "icon"]) {
+      if (Object.hasOwn(r, field)) {
+        delete r[field];
+        changed = true;
+      }
+    }
+  }
+  return changed;
+}
+
+if (removeObsoleteFields(relics)) {
+  localStorage.setItem(KEY, JSON.stringify(relics));
+}
+
 for (const r of relics) {
   if (r.id === "crimson-carousel" && !r.image) {
     r.image = "assets/crimson-carousel.png";
   }
   if (r.id === "eternal-banquet" && !r.image) {
     r.image = "assets/eternal-banquet.png";
+  }
+  if (r.id === "crocodiles-tears" && !r.image) {
+    r.image = "assets/crocodiles-tears.png";
   }
 }
 
@@ -178,27 +203,23 @@ const upgradeProfiles = {
     upgradable: true,
     upgradePlus: "Poise Power tăng lên +15%; mỗi cộng dồn Clarity tăng thêm +2% Critical Chance.",
     upgradePlusPlus: "Poise Power tăng lên +20%; mỗi cộng dồn Clarity tăng thêm +3% Critical Chance.",
-    uniquePlusPlus: "[Perfect Understanding] — Khi có 3 Clarity, đòn chí mạng gây thêm 30% sát thương và không tiêu thụ Clarity.",
     craftsFrom: ["The Unbroken Form", "The Unwritten Truth"]
   },
   "last-audience": {
     upgradable: true,
     upgradePlus: "+20% Critical Chance; mỗi Applause tăng 3% Critical Damage.",
-    upgradePlusPlus: "+25% Critical Chance; mỗi Applause tăng 4% Critical Damage.",
-    uniquePlusPlus: "[Standing Ovation] — Khi đạt 5 Applause, đòn chí mạng kế tiếp nhận +50% Critical Damage và không tiêu thụ cộng dồn."
+    upgradePlusPlus: "+25% Critical Chance; mỗi Applause tăng 4% Critical Damage."
   },
   "eternal-banquet": {
     upgradable: true,
     upgradePlus: "Nhận 650 Bloodfeast khi bắt đầu trận; Bloodfiend gây +15% sát thương lên mục tiêu có Bleed.",
     upgradePlusPlus: "Nhận 800 Bloodfeast khi bắt đầu trận; hiệu ứng tăng Bloodfeast từ Bleed được nâng lên 150%.",
-    uniquePlusPlus: "[The Feast Without End] — Cần 3 Bloodfiend và 2.500 Bloodfeast. Grand Banquet tăng sát thương thêm 25% và không tiêu thụ Bloodfeast trong lượt kích hoạt.",
     craftsFrom: ["Crimson Carousel"]
   },
   "malevolent-shrine": {
     upgradable: true,
     upgradePlus: "+20% Critical Chance và +25% sát thương lên mục tiêu có Bleed.",
-    upgradePlusPlus: "Tối đa 7 Dismantle; các đòn đánh lên mục tiêu có Bleed gây thêm 15% sát thương.",
-    uniquePlusPlus: "[Malevolent Shrine: Open] — Khi kích hoạt, gây thêm sát thương lên mọi mục tiêu có Bleed và tiêu thụ toàn bộ Dismantle."
+    upgradePlusPlus: "Tối đa 7 Dismantle; các đòn đánh lên mục tiêu có Bleed gây thêm 15% sát thương."
   }
 };
 
@@ -232,8 +253,6 @@ if (oldMind?.always === "Chưa thiết kế.") {
     "+10% Poise Power.\\nKhi đánh chính xác, nhận 1 [Clarity], tối đa 3.";
   oldMind.conditional =
     "[Unified Focus] — Cần 3 [Clarity]. Đòn tiếp theo nhận +20% Critical Chance; sau khi kích hoạt, đặt lại Clarity.";
-  oldMind.unique =
-    "[Mind and Motion] — Đòn chí mạng tiêu thụ 1 Clarity để gây thêm 15% sát thương.";
   oldMind.obtain = "Craft từ The Unbroken Form và The Unwritten Truth.";
 }
 
@@ -287,21 +306,6 @@ function esc(s = "") {
   );
 }
 
-function rank(r) {
-  return (
-    {
-      Common: 1,
-      Uncommon: 2,
-      Rare: 3,
-      Epic: 4,
-      Ancient: 5,
-      Mythical: 6,
-      Mythic: 7,
-      Pillar: 8
-    }[r] || 0
-  );
-}
-
 function roman(t) {
   return (
     {
@@ -339,7 +343,18 @@ function marked(s) {
     .split("\n")
     .map((line) =>
       line
-        .replace(/\[(.*?)\]/g, '<span class="cond">[$1]</span>')
+        .replace(
+          /Khi bắt đầu trận/g,
+          '<span class="trigger-start">Khi bắt đầu trận</span>'
+        )
+        .replace(/\[(.*?)\]/g, (match, content) => {
+          const triggerClasses = {
+            "Bắt đầu trận": "trigger-start",
+            "Khi đánh dính": "trigger-hit",
+            "Khi bị dính sát thương": "trigger-damaged"
+          };
+          return `<span class="${triggerClasses[content] || "cond"}">${match}</span>`;
+        })
         .replace(
           /\b(Bleed|Poison|Bloodfeast|Hardblood|Blooming Thorn|Bloodied Hand|Blood-tinged Scissorblades|Hardblood Armor|Poise|Burn|Tremor|Freeze|Light|Dark|Lightning|Wind|Earth)\b/g,
           '<span class="tag">$1</span>'
@@ -398,8 +413,7 @@ function renderShowcase() {
 
   let effects = [
     ["Effect", r.always],
-    ["Conditional Effect", r.conditional],
-    ["Unique Effect", r.unique]
+    ["Conditional Effect", r.conditional]
   ]
     .filter((x) => x[1])
     .map((x) => `[${x[0]}]\n${x[1]}`)
@@ -410,11 +424,6 @@ function renderShowcase() {
       ? [r.upgradePlus]
       : upgradeLevel === 2
       ? [r.upgradePlus, r.upgradePlusPlus].filter(Boolean)
-      : [];
-
-  let uniqueUpgrade =
-    upgradeLevel === 2 && rank(r.rarity) >= 6 && r.uniquePlusPlus
-      ? [`[Unique Effect]\n${r.uniquePlusPlus}`]
       : [];
 
   let craftResults = relics
@@ -432,7 +441,7 @@ function renderShowcase() {
         ${
           r.image
             ? `<img class="bigimage" src="${esc(r.image)}" alt="${esc(r.name)}">`
-            : `<span class="bigicon">${esc(r.icon || "✦")}</span>`
+            : ""
         }
         <span class="tierbig">${esc(r.tier || "—")}</span>
         <div class="upgrades">
@@ -456,7 +465,7 @@ function renderShowcase() {
       </div>
     </div>
     <div class="effectbox">${marked(
-        [effects, ...improvements, ...uniqueUpgrade]
+        [effects, ...improvements]
           .filter(Boolean)
           .join("\n\n") || "No effects recorded."
       )}
@@ -472,11 +481,15 @@ function renderShowcase() {
         <strong>Rarity / Tier:</strong> ${esc(r.rarity || "—")} / ${esc(r.tier || "—")}
       </div>
       <div><strong>Keyword:</strong> ${esc((r.keywords || []).join(" / ") || "—")}</div>
+      <div><strong>Faction:</strong> ${esc(r.faction || "—")}</div>
       <div><strong>Way to obtain:</strong> ${marked(r.obtain || "—")}</div>
+      <div><strong>Buy:</strong> ${esc(r.buy || "—")}</div>
       <div>
         <strong>Selling price:</strong>
-        ${r.sell !== "" && r.sell != null ? esc(r.sell) + " siq" : "—"}
+        ${r.sell !== "" && r.sell != null ? esc(r.sell) + " Siq" : "—"}
       </div>
+      <div><strong>Abno:</strong> ${esc(r.abno || "—")}</div>
+      <div><strong>Lore:</strong> ${marked(r.lore || "—")}</div>
       <div>
         <strong>Craft materials:</strong>
         ${esc((r.craftsFrom || []).join(", ") || "—")}
@@ -529,7 +542,7 @@ function renderGroups() {
                     ${
                       r.image
                         ? `<img class="giftimage" src="${esc(r.image)}" alt="${esc(r.name)}">`
-                        : `<span class="emoji">${esc(r.icon || "✦")}</span>`
+                        : ""
                     }
                     <span class="smalltier">${esc(r.tier)}</span>
                   </div>
@@ -603,14 +616,11 @@ function openForm(r = null) {
     "description",
     "always",
     "conditional",
-    "unique",
     "obtain",
     "upgradePlus",
     "upgradePlusPlus",
-    "uniquePlusPlus",
     "buy",
     "sell",
-    "floor",
     "abno",
     "lore"
   ];
@@ -647,14 +657,11 @@ $("form").onsubmit = (e) => {
     "description",
     "always",
     "conditional",
-    "unique",
     "obtain",
     "upgradePlus",
     "upgradePlusPlus",
-    "uniquePlusPlus",
     "buy",
     "sell",
-    "floor",
     "abno",
     "lore"
   ]) {
@@ -671,14 +678,9 @@ $("form").onsubmit = (e) => {
     .filter(Boolean);
   r.upgradable = $("upgradable").checked;
 
-  if (r.uniquePlusPlus && rank(r.rarity) < 6) {
-    alert("Unique Effect ở ++ chỉ dành cho Relic từ Mythic trở lên.");
-    return;
-  }
-
   if (
     !r.upgradable &&
-    (r.upgradePlus || r.upgradePlusPlus || r.uniquePlusPlus)
+    (r.upgradePlus || r.upgradePlusPlus)
   ) {
     alert("Hãy bật nâng cấp nếu Relic có hiệu ứng + hoặc ++.");
     return;
@@ -754,8 +756,9 @@ $("importFile").onchange = async (e) => {
     let d = JSON.parse(await e.target.files[0].text());
     if (Array.isArray(d) && confirm("Thay thế toàn bộ Relic archive bằng file này?")) {
       relics = d;
-      selected = relics[0]?.id || null;
-      save();
+    removeObsoleteFields(relics);
+    selected = relics[0]?.id || null;
+    save();
     } else if (!Array.isArray(d)) {
       throw 0;
     }

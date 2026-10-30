@@ -41,6 +41,7 @@
             <option>Uncommon</option>
             <option>Rare</option>
             <option>Epic</option>
+            <option>Legendary</option>
             <option>Ancient</option>
             <option>Mythical</option>
             <option>Mythic</option>
@@ -95,7 +96,7 @@
 <div class="field full">
   <label>Conditional effect</label>
   <textarea id="conditional"></textarea>
-</div><div class="field full"><label>Unique Effect</label><textarea id="unique"></textarea></div><div class="field full"><label>Way to obtain</label><textarea id="obtain" placeholder="Boss / chest / shop / event / leaderboard / craft recipe"></textarea></div><div class="field full"><label>Craft materials (comma separated relic names)</label><input id="craftsFrom" placeholder="Relic One, Relic Two"></div>
+</div><div class="field full"><label>Way to obtain</label><textarea id="obtain" placeholder="Boss / chest / shop / event / leaderboard / craft recipe"></textarea></div><div class="field full"><label>Craft materials (comma separated relic names)</label><input id="craftsFrom" placeholder="Relic One, Relic Two"></div>
 <div class="field">
   <label><input id="upgradable" type="checkbox"> This Relic can be upgraded</label>
 </div>
@@ -108,21 +109,14 @@
   <label>Effect improvement at ++</label>
   <textarea id="upgradePlusPlus" placeholder="Describe the stronger effect at ++"></textarea>
 </div>
-<div class="field full">
-  <label>Unique Effect (Mythic or higher)</label>
-  <textarea id="uniquePlusPlus"></textarea>
-</div>
 <div class="field">
   <label>Buying Cost</label>
-  <input id="buy" type="number" min="0">
+  <input id="buy">
 </div>
 <div class="field">
   <label>Selling Cost</label>
   <input id="sell" type="number" min="0">
 </div><div class="field">
-  <label>Floor Themes</label>
-  <input id="floor"></div>
-  <div class="field">
     <label>Abno Events</label>
     <input id="abno">
   </div><div class="field full">
