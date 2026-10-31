@@ -116,7 +116,7 @@ for (const r of relics) {
     r.image = "assets/eternal-banquet.png";
   }
   if (r.id === "crocodiles-tears" && !r.image) {
-    r.image = "assets/crocodiles-tears.png";
+    r.image = "assets/crocodile's-tears.png";
   }
 }
 
