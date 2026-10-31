@@ -1,73 +1,5 @@
 const seed = [
   {
-    id: "unbroken-form",
-    name: "The Unbroken Form",
-    rarity: "Ancient",
-    tier: "IV",
-    keywords: ["Poise"],
-    faction: "",
-    description: "Một thanh kiếm gỗ cũ kỹ, không hoa văn trang trí. Càng tập trung vào chuyển động, thanh kiếm càng nhẹ nhàng và chính xác.",
-    always: "+10% Poise Power.\\nĐòn đánh chính xác nhận +5% Critical Chance.",
-    conditional: "[Perfect Alignment] — Sau 3 đòn đánh liên tiếp không hụt và không bị gián đoạn, đòn kế tiếp nhận +20% Critical Chance. Đánh hụt hoặc bị gián đoạn sẽ đặt lại bộ đếm.",
-    obtain: "Có tỷ lệ xuất hiện sau thử thách đòi hỏi độ chính xác.",
-    upgrade: "",
-    buy: "",
-    sell: "",
-    abno: "",
-    lore: "“A blade does not need to be sharp to cut.”"
-  },
-  {
-    id: "unwritten-truth",
-    name: "The Unwritten Truth",
-    rarity: "Ancient",
-    tier: "IV",
-    keywords: ["Poise", "Light"],
-    faction: "",
-    description: "Một cuốn sách cũ kỹ với bìa da bong tróc, trang giấy ố vàng và những trang trắng tự viết lại sau mỗi trận chiến.",
-    always: "Mỗi lượt, đòn đánh đầu tiên gây thêm 1 Poise Count.\\nKhi đồng minh có Poise đánh trúng, hồi 2 SP.",
-    conditional: "[Read Between the Lines] — Cần ít nhất 5 Poise. Kỹ năng tiếp theo nhận +1 Final Power.",
-    obtain: "Thưởng từ sự kiện khám phá thư viện cổ.",
-    upgrade: "",
-    buy: "",
-    sell: "",
-    abno: "",
-    lore: "Sự thật không được viết ra vẫn có thể được nhìn thấy."
-  },
-  {
-    id: "one-with-the-mind",
-    name: "One With The Mind",
-    rarity: "Mythical",
-    tier: "VIII",
-    keywords: ["Poise", "Light"],
-    faction: "Crafted Relic",
-    description: "Relic kết hợp giữa The Unbroken Form và The Unwritten Truth, đại diện cho sự thống nhất giữa hành động và nhận thức.",
-    always: "+10% Poise Power.\\nKhi đánh chính xác, nhận 1 [Clarity], tối đa 3.",
-    conditional: "[Unified Focus] — Cần 3 [Clarity]. Đòn tiếp theo nhận +20% Critical Chance; sau khi kích hoạt, đặt lại Clarity.",
-    obtain: "Craft từ The Unbroken Form và The Unwritten Truth.",
-    upgrade: "",
-    buy: "",
-    sell: "",
-    abno: "",
-    lore: "Hành động và nhận thức không còn đối lập."
-  },
-  {
-    id: "last-audience",
-    name: "The Last Audience",
-    rarity: "Mythical",
-    tier: "VIII",
-    keywords: ["Poise", "Dark"],
-    faction: "",
-    description: "Một chiếc mặt nạ sân khấu màu trắng ngà, với những vết nứt và nụ cười hoàn hảo đến đáng sợ.",
-    always: "+15% Critical Chance.\\n+10% Poise Power.\\nĐòn chí mạng cho 1 cộng dồn [Applause], mỗi cộng dồn tăng 2% Critical Damage, tối đa 5.",
-    conditional: "[Flawless Performance] — Sau 3 đòn liên tiếp không hụt và không bị gián đoạn, đòn kế tiếp nhận +20% Critical Chance.",
-    obtain: "Có tỷ lệ xuất hiện khi hoàn thành trận chiến mà không nhận sát thương.",
-    upgrade: "Không thể nâng cấp.",
-    buy: "",
-    sell: "",
-    abno: "",
-    lore: ""
-  },
-  {
     id: "crimson-carousel",
     name: "Crimson Carousel",
     rarity: "Mythical",
@@ -77,7 +9,7 @@ const seed = [
     description: "Một mô hình vòng quay ngựa gỗ thu nhỏ với rèm đỏ thẫm, đường viền vàng xỉn và những con ngựa gỗ kỳ dị.",
     always: "Khi bắt đầu trận: nhận 300 Bloodfeast.\\nBloodfeast nhận từ Bleed tăng gấp đôi.\\nKhi Bloodfiend dùng kỹ năng tiêu thụ Bloodfeast, cuối lượt tấn công tiêu thụ thêm lượng bằng lượng kỹ năng đã tiêu thụ.",
     conditional: "[A Feast for the Family] — Cần ít nhất 2 Bloodfiend đang tham chiến. Khi Bloodfiend gây Bleed, tăng Bloodfeast từ đòn đó thêm 25%.",
-    obtain: "Có tỷ lệ xuất hiện khi đánh bại Bloodfiend Boss.",
+    obtain: "Được Papa Quixote tặng",
     upgrade: "Không thể nâng cấp.",
     buy: "",
     sell: "",
@@ -102,23 +34,6 @@ const seed = [
     lore: "“A feast without an ending. A family without a grave.”"
   },
   {
-    id: "malevolent-shrine",
-    name: "Malevolent Shrine",
-    rarity: "Mythic",
-    tier: "XII",
-    keywords: ["Bleed", "Dark"],
-    faction: "Ryomen Sukuna-exclusive",
-    description: "Một mảnh cổng đền thờ cổ phủ máu khô và những đường vân đen đỏ. Khi kích hoạt, không gian dường như bị chia cắt bởi những đường chém vô hình.",
-    always: "[The Disgraced] — +15% Critical Chance; +20% sát thương lên mục tiêu có Bleed. Gây sát thương lên mục tiêu có Bleed nhận 1 [Dismantle], tối đa 5.\\n[Cleave] — Tấn công mục tiêu có Bleed nhận +10% Critical Damage.",
-    conditional: "[The King of Curses] — Sau khi gây Bleed lên ít nhất 3 mục tiêu: kỹ năng tiếp theo +1 Final Power và +20% sát thương lên mục tiêu có Bleed.",
-    obtain: "Chỉ nhận khi sử dụng Ryomen Sukuna và hoàn thành thử thách [The King Above All].",
-    upgrade: "Không thể nâng cấp.",
-    buy: "",
-    sell: "",
-    abno: "",
-    lore: ""
-  },
-  {
     id: "crocodiles-tears",
     name: "Crocodile's Tears",
     rarity: "Legendary",
@@ -126,7 +41,7 @@ const seed = [
     keywords: ["Tremor", "Dark"],
     faction: "Không",
     description: "Nước mắt của cá sấu khổng lồ",
-    always: "[Bắt đầu trận] Nhận 1 Hard As An Reptile.",
+    always: "[Bắt đầu trận] Nhận 2 Hard As An Reptile. Nhận thêm 1 nêu máu dưới 10%.",
     conditional: "[Khi đánh dính] Áp 2 Bleed potency và count lên kẻ địch. Nếu kẻ địch có 10 Bleed potency gây (Bleed Potency x Bleed Count) sát thương bóng tối lên kẻ địch (Số Bleed potency được đếm đến 5).\\n[Khi bị dính sát thương] Áp (sát thương nhận / Bleed Potency trên kẻ địch) khiên lên toàn bộ đồng minh; 1 lần mỗi lượt.",
     obtain: "Đánh bại Cá sấu khổng lồ",
     buy: "Không thể mua",
@@ -138,16 +53,28 @@ const seed = [
 
 const KEY = "relicArchiveMirrorDungeon_v3";
 const CROCODILE_MIGRATION_KEY = `${KEY}_crocodilesTears_v1`;
+const REMOVED_RELIC_IDS = new Set([
+  "unbroken-form",
+  "malevolent-shrine",
+  "one-with-the-mind",
+  "last-audience",
+  "unwritten-truth"
+]);
 
 let relics;
 try {
-  relics = JSON.parse(localStorage.getItem(KEY)) || seed;
+  relics = JSON.parse(localStorage.getItem(KEY)) || seed.filter(
+    (r) => !REMOVED_RELIC_IDS.has(r.id)
+  );
 } catch (e) {
-  relics = seed;
+  relics = seed.filter((r) => !REMOVED_RELIC_IDS.has(r.id));
 }
 
 const activeRelics = relics.filter(
-  (r) => r.id !== "carousel-figurine" && r.name !== "Carousel Figurine"
+  (r) =>
+    r.id !== "carousel-figurine" &&
+    r.name !== "Carousel Figurine" &&
+    !REMOVED_RELIC_IDS.has(r.id)
 );
 
 if (activeRelics.length !== relics.length) {
@@ -189,37 +116,16 @@ for (const r of relics) {
     r.image = "assets/eternal-banquet.png";
   }
   if (r.id === "crocodiles-tears" && !r.image) {
-    r.image = "assets/crocodile's-tears.png";
+    r.image = "assets/crocodiles-tears.png";
   }
 }
 
 const upgradeProfiles = {
-  "unbroken-form": {
-    upgradable: true,
-    upgradePlus: "+15% Poise Power; đòn đánh chính xác nhận +8% Critical Chance.",
-    upgradePlusPlus: "+20% Poise Power; đòn đánh chính xác nhận +12% Critical Chance."
-  },
-  "one-with-the-mind": {
-    upgradable: true,
-    upgradePlus: "Poise Power tăng lên +15%; mỗi cộng dồn Clarity tăng thêm +2% Critical Chance.",
-    upgradePlusPlus: "Poise Power tăng lên +20%; mỗi cộng dồn Clarity tăng thêm +3% Critical Chance.",
-    craftsFrom: ["The Unbroken Form", "The Unwritten Truth"]
-  },
-  "last-audience": {
-    upgradable: true,
-    upgradePlus: "+20% Critical Chance; mỗi Applause tăng 3% Critical Damage.",
-    upgradePlusPlus: "+25% Critical Chance; mỗi Applause tăng 4% Critical Damage."
-  },
   "eternal-banquet": {
     upgradable: true,
     upgradePlus: "Nhận 650 Bloodfeast khi bắt đầu trận; Bloodfiend gây +15% sát thương lên mục tiêu có Bleed.",
     upgradePlusPlus: "Nhận 800 Bloodfeast khi bắt đầu trận; hiệu ứng tăng Bloodfeast từ Bleed được nâng lên 150%.",
     craftsFrom: ["Crimson Carousel"]
-  },
-  "malevolent-shrine": {
-    upgradable: true,
-    upgradePlus: "+20% Critical Chance và +25% sát thương lên mục tiêu có Bleed.",
-    upgradePlusPlus: "Tối đa 7 Dismantle; các đòn đánh lên mục tiêu có Bleed gây thêm 15% sát thương."
   }
 };
 
@@ -236,24 +142,6 @@ for (const r of relics) {
   if (r.upgradable === undefined) {
     r.upgradable = false;
   }
-}
-
-const oldTruth = relics.find((r) => r.id === "unwritten-truth");
-if (oldTruth?.always?.startsWith("Chưa xác định")) {
-  oldTruth.always =
-    "Mỗi lượt, đòn đánh đầu tiên gây thêm 1 Poise Count.\\nKhi đồng minh có Poise đánh trúng, hồi 2 SP.";
-  oldTruth.conditional =
-    "[Read Between the Lines] — Cần ít nhất 5 Poise. Kỹ năng tiếp theo nhận +1 Final Power.";
-  oldTruth.obtain = "Thưởng từ sự kiện khám phá thư viện cổ.";
-}
-
-const oldMind = relics.find((r) => r.id === "one-with-the-mind");
-if (oldMind?.always === "Chưa thiết kế.") {
-  oldMind.always =
-    "+10% Poise Power.\\nKhi đánh chính xác, nhận 1 [Clarity], tối đa 3.";
-  oldMind.conditional =
-    "[Unified Focus] — Cần 3 [Clarity]. Đòn tiếp theo nhận +20% Critical Chance; sau khi kích hoạt, đặt lại Clarity.";
-  oldMind.obtain = "Craft từ The Unbroken Form và The Unwritten Truth.";
 }
 
 let selected = relics[0]?.id || null;
@@ -291,6 +179,15 @@ const statusIcons = ["🔥", "🩸", "☠️", "🟠", "🪶", "🧊"];
 const statusNames = ["Burn", "Bleed", "Poison", "Tremor", "Poise", "Freeze"];
 const affinityIcons = ["✦", "🌑", "⚡", "🌪️", "🪨"];
 const affinityNames = ["Light", "Dark", "Lightning", "Wind", "Earth"];
+const items = [
+  {
+    name: "lọ vật chất tối",
+    type: "Mysterious",
+    image: "assets/dark-matter-vile.jpg"
+  }
+];
+let activeItemType = "";
+let selectedItemIndex = null;
 
 function esc(s = "") {
   return String(s).replace(
@@ -343,6 +240,10 @@ function marked(s) {
     .split("\n")
     .map((line) =>
       line
+        .replace(
+          /\b(Hard As An Reptile)\b/g,
+          '<button type="button" class="status-effect" aria-label="Xem chi tiết Hard As An Reptile"><span>$1</span><img src="assets/hard-as-an-reptile.png" alt=""></button>'
+        )
         .replace(
           /Khi bắt đầu trận/g,
           '<span class="trigger-start">Khi bắt đầu trận</span>'
@@ -404,6 +305,114 @@ function renderIcons() {
   $("iconFilters").innerHTML = html;
 }
 
+function renderItemTypes() {
+  const types = [...new Set(items.map((item) => item.type).filter(Boolean))].sort(
+    (a, b) => a.localeCompare(b)
+  );
+  const filters = ["", ...types];
+
+  $("itemTypeFilters").innerHTML = `
+    <div class="filtergroup">
+      <div class="filtergroup-title">Item Type</div>
+      <div class="filtergroup-buttons">
+        ${filters
+          .map(
+            (type) => `
+              <button class="item-type-btn ${
+                activeItemType === type ? "active" : ""
+              }" type="button" data-item-type="${esc(type)}">
+                ${esc(type || "All")}
+              </button>
+            `
+          )
+          .join("")}
+      </div>
+    </div>
+  `;
+}
+
+function renderItems() {
+  const showcase = $("itemShowcase");
+  const backButton = $("itemBackBtn");
+  const countTitle = $("itemCountTitle");
+  const itemList = $("itemList");
+
+  if (selectedItemIndex !== null && items[selectedItemIndex]) {
+    const item = items[selectedItemIndex];
+    showcase.innerHTML = `
+      <div class="leftcol">
+        <div class="lefttitle">${esc(item.name || "Unnamed Item")}</div>
+        <div class="relicart item-detail-art">
+          ${
+            item.image
+              ? `<img class="bigimage" src="${esc(item.image)}" alt="${esc(item.name)}">`
+              : ""
+          }
+        </div>
+        <div class="rarityline">${esc(item.type || "—")}</div>
+      </div>
+      <div class="item-description">
+        <strong>Description</strong>
+        <p>${esc(item.description || "Chưa có mô tả.")}</p>
+      </div>
+    `;
+    showcase.classList.remove("hidden");
+    backButton.classList.remove("hidden");
+    countTitle.classList.add("hidden");
+    itemList.classList.add("hidden");
+    return;
+  }
+
+  showcase.classList.add("hidden");
+  showcase.innerHTML = "";
+  backButton.classList.add("hidden");
+  countTitle.classList.remove("hidden");
+  itemList.classList.remove("hidden");
+
+  const query = (
+    $("searchItemName").value +
+    " " +
+    $("searchItemTrait").value
+  )
+    .toLowerCase()
+    .trim();
+  const filteredItems = items.filter(
+    (item) =>
+      (!query || JSON.stringify(item).toLowerCase().includes(query)) &&
+      (!activeItemType || item.type === activeItemType)
+  );
+
+  $("itemCountTitle").textContent = `Items (${filteredItems.length})`;
+  $("itemList").innerHTML = filteredItems.length
+    ? filteredItems
+        .map(
+          (item) => {
+            const index = items.indexOf(item);
+            return `
+            <article class="item-card" data-item-index="${index}" tabindex="0" role="button" aria-label="Xem ${esc(item.name || "Item")}">
+              <div class="item-card-art">
+                ${
+                  item.image
+                    ? `<img src="${esc(item.image)}" alt="${esc(item.name)}">`
+                    : ""
+                }
+              </div>
+              <h3>${esc(item.name || "Unnamed Item")}</h3>
+              <div class="item-card-type">${esc(item.type || "—")}</div>
+              <p>${esc(item.description || "")}</p>
+            </article>
+          `;
+          }
+        )
+        .join("")
+    : '<div class="empty item-empty">Chưa có dữ liệu Item.</div>';
+}
+
+function renderItemPage() {
+  renderItemTypes();
+  renderItems();
+}
+
 function renderShowcase() {
   let r = relics.find((x) => x.id === selected) || relics[0];
   if (!r) {
@@ -437,6 +446,16 @@ function renderShowcase() {
   $("showcase").innerHTML = `
     <div class="leftcol">
       <div class="lefttitle">${esc(r.name)}</div>
+      <div class="upgrades">
+        ${["Normal", "+", "++"]
+          .map(
+            (x, i) =>
+              `<button class="${upgradeLevel === i ? "active" : ""}" data-up="${i}" ${
+                !r.upgradable && i ? "disabled" : ""
+              } title="${i ? "Upgrade " + x : "Base effect"}">${x}</button>`
+          )
+          .join("")}
+      </div>
       <div class="relicart">
         ${
           r.image
@@ -444,16 +463,6 @@ function renderShowcase() {
             : ""
         }
         <span class="tierbig">${esc(r.tier || "—")}</span>
-        <div class="upgrades">
-          ${["Normal", "+", "++"]
-            .map(
-              (x, i) =>
-                `<button class="${upgradeLevel === i ? "active" : ""}" data-up="${i}" ${
-                  !r.upgradable && i ? "disabled" : ""
-                } title="${i ? "Upgrade " + x : "Base effect"}">${x}</button>`
-            )
-            .join("")}
-        </div>
       </div>
       <div class="rarityline">
         ${esc(r.rarity)} · Tier ${esc(r.tier || "—")}<br>
@@ -704,6 +713,35 @@ $("closeModal").onclick = $("cancelBtn").onclick = () =>
   $("modal").classList.remove("show");
 
 $("searchFilter").oninput = $("searchTrait").oninput = renderGroups;
+$("searchItemName").oninput = $("searchItemTrait").oninput = renderItems;
+
+$("itemTypeFilters").onclick = (e) => {
+  const button = e.target.closest("[data-item-type]");
+  if (!button) return;
+  activeItemType = button.dataset.itemType;
+  renderItemPage();
+};
+
+$("itemList").onclick = (e) => {
+  const card = e.target.closest("[data-item-index]");
+  if (!card) return;
+  selectedItemIndex = Number(card.dataset.itemIndex);
+  renderItemPage();
+};
+
+$("itemList").onkeydown = (e) => {
+  if (e.key !== "Enter" && e.key !== " ") return;
+  const card = e.target.closest("[data-item-index]");
+  if (!card) return;
+  e.preventDefault();
+  selectedItemIndex = Number(card.dataset.itemIndex);
+  renderItemPage();
+};
+
+$("itemBackBtn").onclick = () => {
+  selectedItemIndex = null;
+  renderItemPage();
+};
 
 $("iconFilters").onclick = (e) => {
   let b = e.target.closest("button");
@@ -731,6 +769,35 @@ $("groups").onclick = (e) => {
   }
 };
 
+const statusEffectModal = $("statusEffectModal");
+const statusEffectClose = $("closeStatusEffectModal");
+
+function closeStatusEffectDetails() {
+  statusEffectModal.classList.remove("show");
+  statusEffectModal.setAttribute("aria-hidden", "true");
+}
+
+document.addEventListener("click", (e) => {
+  if (e.target.closest(".status-effect")) {
+    statusEffectModal.classList.add("show");
+    statusEffectModal.setAttribute("aria-hidden", "false");
+    statusEffectClose.focus();
+    return;
+  }
+
+  if (e.target === statusEffectModal) {
+    closeStatusEffectDetails();
+  }
+});
+
+statusEffectClose.onclick = closeStatusEffectDetails;
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && statusEffectModal.classList.contains("show")) {
+    closeStatusEffectDetails();
+  }
+});
+
 $("showcase").onclick = (e) => {
   let b = e.target.closest("[data-up]");
   if (b && !b.disabled) {
@@ -755,7 +822,7 @@ $("importFile").onchange = async (e) => {
   try {
     let d = JSON.parse(await e.target.files[0].text());
     if (Array.isArray(d) && confirm("Thay thế toàn bộ Relic archive bằng file này?")) {
-      relics = d;
+    relics = d.filter((r) => !REMOVED_RELIC_IDS.has(r.id));
     removeObsoleteFields(relics);
     selected = relics[0]?.id || null;
     save();
@@ -776,8 +843,9 @@ document.querySelector(".tabs").onclick = (e) => {
   document.querySelectorAll(".tabs .tab").forEach((item) => {
     item.classList.toggle("active", item === tab);
   });
-  $("relicPage").classList.toggle("hidden", activeView !== "relicPage");
-  $("characterPage").classList.toggle("hidden", activeView !== "characterPage");
+  document.querySelectorAll("main > section[id]").forEach((section) => {
+    section.classList.toggle("hidden", section.id !== activeView);
+  });
   if (activeView === "characterPage") renderCharacters();
 };
 
@@ -795,3 +863,4 @@ $("characterDetails").onclick = (e) => {
 };
 
 render();
+renderItemPage();
