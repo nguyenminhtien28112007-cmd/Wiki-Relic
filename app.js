@@ -41,7 +41,7 @@ const seed = [
     keywords: ["Tremor", "Dark"],
     faction: "Không",
     description: "Nước mắt của cá sấu khổng lồ",
-    always: "[Bắt đầu trận] Nhận 2 Hard As An Reptile. Nhận thêm 1 nêu máu dưới 10%.",
+    always: "[Bắt đầu trận] Nhận 2 Hard As An Reptile. Nhận thêm 1 nếu máu dưới 10%.",
     conditional: "[Khi đánh dính] Áp 2 Bleed potency và count lên kẻ địch. Nếu kẻ địch có 10 Bleed potency gây (Bleed Potency x Bleed Count) sát thương bóng tối lên kẻ địch (Số Bleed potency được đếm đến 5).\\n[Khi bị dính sát thương] Áp (sát thương nhận / Bleed Potency trên kẻ địch) khiên lên toàn bộ đồng minh; 1 lần mỗi lượt.",
     obtain: "Đánh bại Cá sấu khổng lồ",
     buy: "Không thể mua",
