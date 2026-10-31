@@ -32,7 +32,7 @@ button{cursor:pointer}
         }
 .tabs{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(5,1fr);
     gap:5px;margin:0 3% 10px
 }
     .tab{
@@ -159,11 +159,10 @@ main{
                 line-height:1
             }
             .upgrades{
-                position:absolute;
-                right:5px;
-                top:4px;
                 display:flex;
-                gap:3px
+                justify-content:flex-end;
+                gap:3px;
+                margin:0 0 5px
             }
             .upgrades button{
                 min-width:24px;
@@ -171,7 +170,8 @@ main{
                 border:0;
                 background:#292a31;
                 color:#aaa;
-                font-weight:900
+                font-weight:900;
+                padding:0 7px
             }
             .upgrades button.active{
                 background:#ffb52b;
@@ -192,7 +192,14 @@ main{
                 font-size:14px;
                 line-height:1.62;
                 white-space:pre-wrap;
-                overflow-wrap:anywhere
+                overflow-wrap:anywhere;
+                max-height:240px;
+                overflow-y:auto;
+                scrollbar-width:none;
+                -ms-overflow-style:none
+            }
+            .effectbox::-webkit-scrollbar{
+                display:none
             }
             .rightbox{
                 font-size:13px;
@@ -212,6 +219,32 @@ main{
             .trigger-start{color:#ff9f00;font-weight:700}
             .trigger-hit{color:var(--red);font-weight:700}
             .trigger-damaged{color:#ffcb00;font-weight:700}
+            .status-effect{
+                display:inline-flex;
+                align-items:center;
+                gap:5px;
+                vertical-align:middle;
+                padding:0;
+                border:0;
+                background:transparent;
+                color:inherit;
+                font:inherit;
+                cursor:pointer
+            }
+            .status-effect:hover,
+            .status-effect:focus-visible{
+                text-decoration:underline;
+                outline:1px solid var(--gold);
+                outline-offset:2px
+            }
+            .status-effect img{
+                width:auto;
+                height:auto;
+                max-width:25px;
+                max-height:25px;
+                object-fit:contain;
+                vertical-align:middle
+            }
             .kw{color:#bf793d;
                 text-decoration:underline
             }
@@ -323,8 +356,7 @@ main{
                         overflow:auto;
                         padding:20px
                     }
-                    .modalshade
-                    .show{display:block}
+                    .modalshade.show{display:block}
                     .formmodal{
                         max-width:850px;
                         margin:0 auto;
@@ -373,6 +405,44 @@ main{
                             color:#fff;
                             font-size:20px;padding:3px 10px
                         }
+.status-effect-shade{z-index:40;display:none;align-items:flex-start;justify-content:center;padding-top:min(18vh,130px)}
+.status-effect-shade.show{display:flex}
+.status-effect-modal{position:relative;width:min(100%,420px);height:max-content;background:#121217;border-radius:5px;padding:18px 12px 14px}
+.status-effect-modal .closemodal{position:absolute;top:8px;right:8px;float:none}
+.status-effect-modal h2{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 28px 12px 0;padding:0 0 12px;border-bottom:1px solid #aaa8b1;font-size:20px;text-align:center}
+.status-effect-modal h2 img{width:auto;height:auto;max-width:32px;max-height:32px;object-fit:contain}
+.status-effect-details{font-size:16px;line-height:1.45}
+.status-effect-details p{position:relative;margin:0;padding-left:15px}
+.status-effect-details p::before{content:"-";position:absolute;left:0}
+.status-effect-details p+p{margin-top:3px}
+.status-effect-details strong{font-weight:700}
 @media(max-width:850px){.showcase{grid-template-columns:135px minmax(0,1fr)}.rightbox{grid-column:1/-1;min-height:80px}.rightbox .rightspace{height:20px}.gallery{grid-template-columns:repeat(auto-fill,minmax(72px,1fr))}}
 .character-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}.character-button{min-height:42px;background:#25262c;border:1px solid #41424a;border-radius:4px;color:var(--text);font-weight:700}.character-button:hover{border-color:var(--blue);background:#303139}.character-details{position:relative;max-width:760px;background:var(--panel);border-radius:5px;padding:20px;margin-top:8px}.character-close{position:absolute;top:10px;right:10px;width:30px;height:30px;border:0;border-radius:3px;background:#c82935;color:white;font-weight:800;font-size:19px;line-height:1}.character-details h3{margin:0 42px 18px 0;font-size:20px}.character-stats{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.character-stat{padding:9px 0;border-bottom:1px solid var(--line);line-height:1.45}.character-stat strong{color:var(--gold)}.character-stat.full{grid-column:1/-1}
-@media(max-width:560px){.tabs{grid-template-columns:repeat(3,1fr)}.filterrow{grid-template-columns:28px 1fr}.filterrow #searchFilter{grid-column:1/-1}.showcase{grid-template-columns:1fr}.leftcol{display:grid;grid-template-columns:1fr 1fr;gap:7px}.lefttitle{margin:0}.relicart{height:120px}.effectbox{min-height:140px}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.character-stats{grid-template-columns:1fr}}
+@media(max-width:560px){.tabs{grid-template-columns:repeat(2,1fr)}.filterrow{grid-template-columns:28px 1fr}.filterrow #searchFilter,.filterrow #searchItemName{grid-column:1/-1}.showcase{grid-template-columns:1fr}.leftcol{display:grid;grid-template-columns:1fr 1fr;gap:7px}.lefttitle{margin:0}.upgrades{grid-column:1/-1}.relicart{height:120px}.effectbox{min-height:140px}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.character-stats{grid-template-columns:1fr}}
+.lore-archive{max-width:900px;margin:0 auto;background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:clamp(18px,4vw,36px);line-height:1.75}
+.lore-quote{margin:0 0 28px;padding:0 0 18px;border-bottom:1px solid var(--line);font-size:clamp(17px,2vw,21px);font-style:italic}
+.lore-quote p{margin:0 0 12px}
+.lore-quote cite{display:block;color:var(--gold);font-size:15px;font-style:normal;text-align:right}
+.lore-archive .sectiontitle{margin:0 0 16px;color:var(--gold)}
+.lore-copy p{margin:0 0 15px}
+.lore-welcome{margin:24px 0 0;color:var(--gold);font-size:18px;font-weight:700;text-align:center}
+.item-type-btn{min-height:25px;padding:3px 9px;background:#292a31;border:1px solid #303139;border-radius:2px;color:var(--text);font-size:12px}
+.item-type-btn.active{outline:1px solid var(--blue);background:#343640}
+.item-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+.item-card{min-width:0;padding:8px;background:var(--panel);border-radius:4px;text-align:center}
+.item-card-art{height:100px;margin-bottom:8px;background:var(--bg);border-bottom:3px solid #d65b2b;border-radius:4px;overflow:hidden}
+.item-card-art img{width:100%;height:100%;object-fit:cover}
+.item-card h3{margin:0;font-size:14px;overflow-wrap:anywhere}
+.item-card-type{margin-top:4px;color:var(--gold);font-size:12px}
+.item-card p{margin:6px 0 0;color:var(--muted);font-size:12px}
+.item-card{cursor:pointer}
+.item-card:hover,.item-card:focus-visible{outline:1px solid var(--blue);outline-offset:2px}
+.item-detail{grid-template-columns:minmax(180px,240px) minmax(0,1fr);gap:12px;align-items:stretch;margin-top:12px}
+.item-detail:not(.hidden){display:grid}
+.item-detail .lefttitle{font-size:16px}
+.item-detail-art{height:240px}
+.item-description{min-height:240px;padding:14px 18px;background:var(--panel);border-radius:5px;font-size:16px;line-height:1.6}
+.item-description strong{color:var(--gold);font-size:18px}
+.item-description p{margin:10px 0 0;white-space:pre-wrap}
+.item-empty{grid-column:1/-1}
+@media(max-width:560px){.item-detail{grid-template-columns:1fr}.item-detail-art{height:220px}.item-description{min-height:120px}}
