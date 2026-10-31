@@ -6,6 +6,8 @@
   <button class="tab active" data-view="relicPage">Relics</button>
   <button class="tab" data-view="craftingPage">Relic Crafting</button>
   <button class="tab" data-view="characterPage">Character</button>
+  <button class="tab" data-view="loreArchivedPage">Lore Archived</button>
+  <button class="tab" data-view="itemPage">Item</button>
 </nav><main>
 <section id="relicPage">
 <div class="filterrow"><button class="filtericon" title="Filter">▽</button><input class="control" id="searchTrait" placeholder="Search keyword / condition..."><input class="control" id="searchFilter" placeholder="Filter by relic name..."></div>
@@ -22,6 +24,34 @@
 <h2 class="sectiontitle">Characters</h2>
 <div id="characterList" class="character-list"></div>
 <article id="characterDetails" class="character-details hidden"></article>
+</section>
+<section id="loreArchivedPage" class="hidden">
+  <article class="lore-archive">
+    <blockquote class="lore-quote">
+      <p>“Khi thanh kiếm không còn quyết định vận mệnh của một vương quốc, khi những tòa tháp phù thủy bị che khuất bởi ống khói và khi con người có thể giết một vị thần bằng thứ vũ khí do chính mình tạo ra — thế giới đã bước sang một kỷ nguyên mới.”</p>
+      <cite>Plato</cite>
+    </blockquote>
+    <h2 class="sectiontitle">Kỷ Nguyên Thứ Tư — Kỷ Nguyên Cơ Giới</h2>
+    <div class="lore-copy">
+      <p>Sau sự sụp đổ của các nền văn minh trong Kỷ Nguyên Thứ Ba từ những cuộc thanh trừng giữa người và người, thế giới đã bước vào một thời đại chuyển mình. Ma thuật không còn là sức mạnh duy nhất định hình nền văn minh. Nhờ phát hiện ra cách chuyển hóa ma lực thành năng lượng, các chủng tộc đã phát triển máy móc, đường sắt, điện năng, súng ống và những cỗ máy chiến tranh.</p>
+      <p>Các vương quốc phong kiến như Cloudia dần nhường chỗ cho những đế quốc công nghiệp và sự bành trướng của bayania sang khắp lục địa, thành bang thương mại và các tập đoàn quyền lực. Pháp sư vẫn tồn tại, nhưng giờ đây họ phải chia sẻ vị thế với kỹ sư, nhà khoa học và những người điều khiển máy móc.</p>
+      <p>Dù các thành phố ngày càng hiện đại, thế giới vẫn đầy rẫy xung đột. Những lục địa tranh giành tài nguyên, các tổ chức bí mật săn lùng di tích cổ đại, còn tàn dư của thời đại trước vẫn ẩn náu trong những vùng đất chưa được khám phá.</p>
+      <p>Đây là thời đại của cơ hội và hiểm nguy, nơi một thanh kiếm, một khẩu súng hay một phép thuật đều có thể thay đổi số phận</p>
+    </div>
+    <p class="lore-welcome"><em>Chào mừng đến với Kỷ Nguyên Thứ Tư</em></p>
+  </article>
+</section>
+<section id="itemPage" class="hidden">
+  <div class="filterrow">
+    <button class="filtericon" title="Filter">▽</button>
+    <input class="control" id="searchItemTrait" placeholder="Search item type / description...">
+    <input class="control" id="searchItemName" placeholder="Filter by item name...">
+  </div>
+  <div class="iconrow" id="itemTypeFilters"></div>
+  <button class="smallbtn hidden" id="itemBackBtn" type="button">← Quay lại danh sách</button>
+  <div class="item-detail hidden" id="itemShowcase"></div>
+  <h2 class="sectiontitle" id="itemCountTitle">Items (0)</h2>
+  <div id="itemList" class="item-list"></div>
 </section>
 </main>
 <div class="modalshade" id="modal">
@@ -130,6 +160,18 @@
 </div>
 </form>
 </div>
+</div>
+<div class="modalshade status-effect-shade" id="statusEffectModal" aria-hidden="true">
+  <section class="status-effect-modal" role="dialog" aria-modal="true" aria-labelledby="statusEffectTitle">
+    <button class="closemodal" id="closeStatusEffectModal" type="button" aria-label="Đóng">×</button>
+    <h2 id="statusEffectTitle">Hard As An Reptile<img src="assets/hard-as-an-reptile.png" alt=""></h2>
+    <div class="status-effect-details">
+      <p><strong>Max Stack:</strong> 3</p>
+      <p>+1 shield với mỗi stack</p>
+      <p><span class="trigger-damaged">[Khi bị dính sát thương]</span> nhận thêm 1 khiên từ hiệu ứng bên trên; max 2. Phản lại (sát thương nhận / số máu của chủ sở hữu) sát thương lên kẻ địch gây sát thương.</p>
+      <p>Hết hiệu lực khi <span class="cond">[Kết thúc lượt]</span></p>
+    </div>
+  </section>
 </div>
 <script src="app.js" defer></script>
 </body>
