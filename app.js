@@ -314,66 +314,88 @@ Khi kết thúc:
 • Leviathan không thể tấn công trong 10 lượt tiếp theo.`
       },
       {
-        title: "Hiệu ứng — Envious Adapting",
-        content: `Tối đa 100 stack.
-• Mỗi 10 stack: sức mạnh +0,5%, phòng thủ +1%, máu +5%.
-• Ở số stack tối đa, toàn bộ sát thương của Leviathan trở thành sát thương chuẩn.
-• Khi đánh trúng kẻ địch có hiệu ứng có lợi, có 50% sao chép và 50% xóa hiệu ứng đó; tối đa sao chép 20 hiệu ứng.
-• Nếu kẻ địch là boss phụ hoặc boss chính, toàn bộ sát thương gây lên kẻ địch đó trở thành sát thương chuẩn.
-• Mất 5 stack vào cuối mỗi lượt.`
+        title: "Hiệu ứng — Envious Adaption",
+        content: `[Envious Adaption]
+Max stack: 100
+
+- Với mỗi 10 stack, sức mạnh tăng 0.5%, phòng thủ tăng 1%, máu tăng 5%
+- Ở tối đa stack, Leviathan đặt toàn bộ sát thương thành sát thương chuẩn
+- Khi đánh trúng kẻ địch có hiệu ứng có lợi, Leviathan có 50% sao chép và 50% xóa bỏ hiệu đó; số hiệu ứng sao chép tối đa là 20
+- Nếu kẻ địch là Boss phụ hoặc Boss chính, Leviathan sẽ đặt toàn bộ sát thương gây ra thành sát thương chuẩn (chỉ áp dụng với kẻ địch được nêu)
+
+Giảm 5 stack tại mỗi lượt kết thúc`
       },
       {
         title: "Hiệu ứng — Hatred",
-        content: `Tối đa 100 stack.
-• Mỗi 20 stack: sức mạnh +0,5%.
-• Mỗi 25 stack: [Poise] potency và count nhận được tăng thêm 5.
-• Khi Leviathan nhận sát thương, phản lại lượng sát thương bằng sát thương nhận nhân với số stack trên bản thân; tối đa 5 lần phản đòn.
-• Mất 5 stack vào cuối mỗi lượt.`
+        content: `[Hatred]
+Max stack: 100
+
+- Mỗi 20 stack, sức mạnh tăng 0.5%
+- Mỗi 25 stack, [Poise] potency và count nhận được cộng thêm 5
+- Nếu Leviathan bị dính sát thương sẽ phản lại (sát thương nhận x số stack trên bản thân); tối đa 5 lần phản lại
+
+Giảm 5 stack tại mỗi lượt kết thúc`
       },
       {
         title: "Hiệu ứng — Drowning Abyss",
-        content: `Tối đa 100 potency và 100 count.
-• Khi bị tấn công, giảm Defense theo (số lần bị tấn công × mỗi 25 potency [Drowning Abyss])%; tính cả đòn đánh của Leviathan và đồng minh.
-• Mỗi 10 count, giảm 1% máu của kẻ địch.
-• Mất 20 count vào cuối mỗi lượt.`
+        content: `[Drowning Abyss]
+Max potency và count: 100
+
+- Khi bị tấn công giảm (số lần bị tấn công x mỗi 25 potency [Drowning Abyss])% chỉ số phòng thủ; số lần tấn công được tính cả Leviathan và đồng minh
+- Mỗi 10 count, giảm 1% máu của kẻ địch
+
+Giảm 20 count tại mỗi lượt kết thúc`
       },
       {
         title: "Hiệu ứng — Between-Line Death",
-        content: `Tối đa 1 stack.
-• Không thể bị xóa.
-• Nhận thêm 100% sát thương từ mọi nguồn.
-• Không thể nhận hiệu ứng có lợi.
-• Hiệu ứng kết thúc khi mục tiêu chết.`
+        content: `[Between-Line Death]
+Max stack: 1
+
+- Hiệu ứng này không thể bị xóa
+- Nhận thêm 100% sát thương từ mọi nguồn
+- Không thể nhận hiệu ứng có lợi
+
+Hiệu ứng kết thúc sau khi chết`
       },
       {
         title: "Hiệu ứng — Till They All Buried In Hell!!!",
-        content: `Tối đa 6 stack.
-• Mỗi stack: Leviathan nhận 1 [Protection].
-• Mỗi 2 stack: Leviathan và đồng minh nhận [Double Damage Up].
-• Mỗi lần tấn công, áp [Hell Fire] 1 potency và 2 count lên kẻ địch.`
+        content: `[Till They All Buried In Hell!!!]
+Max stack: 6
+
+- Mỗi 1 stack, Leviathan nhận 1 [Protection]
+- Mỗi 2 stack, Leviathan và đồng minh nhận [Double Damage Up]
+- Mỗi lần tấn công, kẻ địch nhận [Hell Fire] 1 potency và 2 count`
       },
       {
         title: "Hiệu ứng — Hell Fire",
-        content: `Tối đa 100 potency và 100 count.
-• Mỗi 20 potency: nhận 1 [Fragile].
-• Mỗi 25 count: nhận 2 [Weakness].
-• Cuối mỗi lượt, nhận sát thương lửa bằng potency nhân với 5 count.
-• Mất 10 count vào cuối mỗi lượt.`
+        content: `[Hell Fire]
+Max potency và count: 100
+
+- Mỗi 20 potency, nhận 1 [Fragile]
+- Mỗi 25 count, nhận 2 [Weakness]
+- Cuối mỗi lượt kết thúc, nhận sát thương lửa bằng (số potency x 5 count)
+
+Giảm 10 count tại mỗi lượt kết thúc`
       },
       {
-        title: "Hiệu ứng — Drowning Abyss (cường hóa nguyên tố)",
-        content: `Tối đa 75 potency và count.
-• Sát thương hệ nước tăng 1% mỗi 10 potency.
-• Sát thương hệ bóng tối tăng 5% mỗi 20 count.
-• Mỗi 5 stack, khi kẻ địch tấn công, sát thương gây ra giảm 1%.`
+        title: "Hiệu ứng — Drowning Abyss (potency/count 75)",
+        content: `[Drowning Abyss]
+Max potency và count: 75
+
+- Mỗi 5 stack, khi kẻ địch tấn công, sát thương gây ra giảm 1%
+- Sát thương hệ nước tăng 1% mỗi 10 potency
+- Sát thương hệ bóng tối tăng 5% mỗi 20 count`
       },
       {
         title: "Hiệu ứng — Abyssal Echoes",
-        content: `Tối đa 75 potency và count.
-• Mỗi 15 stack, độ chính xác giảm 4%.
-• Mỗi lần kích hoạt, gây sát thương nước và bóng tối bằng tổng count nhân với tổng potency.
-• Mỗi lần kích hoạt, thanh choáng của kẻ địch tăng bằng số count.
-• Nếu bị S3 của Leviathan tiêu thụ toàn bộ, hoàn trả một nửa potency và count.`
+        content: `[Abyssal Echoes]
+Max potency và count: 75
+
+- Mỗi 15 stack, độ chính xác giảm đi 4%
+- Mỗi khi kích hoạt, nhận (tổng count x tổng potency) sát thương nước và bóng tối
+- Mỗi lần kích hoạt, thanh choáng của kẻ địch sẽ được tăng bằng số count
+
+Nếu được tiêu thụ toàn bộ bởi S3 của Leviathan, hoàn trả lại một nửa số potency và count`
       }
     ]
   }
@@ -409,8 +431,8 @@ function esc(s = "") {
   );
 }
 
-function colorPetTriggers(text = "") {
-  return esc(text)
+function colorPetTriggers(text = "", alreadyEscaped = false) {
+  return (alreadyEscaped ? String(text) : esc(text))
     .replace(
       /Khi đánh trúng/g,
       '<span class="trigger-hit">Khi đánh trúng</span>'
@@ -427,6 +449,147 @@ function colorPetTriggers(text = "") {
       /Khi kết thúc/g,
       '<span class="trigger-end">Khi kết thúc</span>'
     );
+}
+
+function renderPetEffectText(text, sections) {
+  const effectDescriptions = new Map([
+    [
+      "Poise",
+      `[Poise]
+Max potency và count: 100
+
+-Nhận tỉ lệ chí mạng bằng (số potency x count)
+
+Mất 1 potency và 1 count khi đánh chí mạng`
+    ],
+    [
+      "Bleeding Hemorrhage",
+      `[Bleeding Hemorrhage]
+Max potency và count: 100
+
+- Mỗi 10 potency, sát thương gây ra giảm 1%
+- Tại mỗi lượt kết thúc, nhận sát thương bằng (số potency x count)
+
+Giảm 1 count mỗi lượt kết thúc`
+    ],
+    [
+      "Tremor",
+      "Crushing Tide applies 2 potency and 2 count, then converts that Tremor into Abyssal Echoes."
+    ],
+    [
+      "Blind Obsession",
+      "Jaw of the Deep Abyss grants 1 stack for every 5 Hatred consumed, up to 5 stacks."
+    ],
+    [
+      "World Tyrant",
+      "Jaw of the Deep Abyss grants 1 potency when 20 Poise potency is consumed."
+    ],
+    [
+      "Water Weakness",
+      `[Water Weakness]
+Max stack: 10
+
+- Mỗi 1 stack, sát thương nước nhận thêm 10%
+
+Mất 1 stack tại mỗi lượt kết thúc`
+    ],
+    [
+      "Fragile",
+      `[Fragile]
+Max stack: 10
+
+- Mỗi 1 stack, sát thương nhận thêm 10%
+
+Mất 1 stack tại mỗi lượt kết thúc`
+    ],
+    [
+      "Water Damage Up",
+      `[Water Damage Up]
+Max stack: 10
+
+- Mỗi 1 stack, sát thương nước gây ra +10%
+
+Mất toàn bộ tại mỗi lượt kết thúc`
+    ],
+    [
+      "Double Damage Up",
+      `[Double Damage Up]
+Max stack: 1
+
+- Sát thương gây ra được x2
+
+Mất toàn bộ tại mỗi lượt kết thúc`
+    ],
+    [
+      "Mark of Tyrant's",
+      "Applied to enemies each time S3 activates Abyssal Echoes."
+    ],
+    [
+      "HP Decreased",
+      "S3 applies 5 stacks to enemies when used."
+    ]
+  ]);
+  sections
+    .filter((section) => section.title.startsWith("Hiệu ứng — "))
+    .forEach((section) => {
+      const effectName = section.title.replace("Hiệu ứng — ", "");
+      const tooltipName = effectName.startsWith("Drowning Abyss (")
+        ? "Drowning Abyss"
+        : effectName;
+      const previousDescription = effectDescriptions.get(tooltipName);
+      const description = section.content.replace(/^\s*\[[^\]]+\]\s*/, "");
+      effectDescriptions.set(
+        tooltipName,
+        previousDescription && tooltipName === "Drowning Abyss"
+          ? `${previousDescription}\n\n${description}`
+          : description
+      );
+    });
+  effectDescriptions.set(
+    "Envious Adapting",
+    effectDescriptions.get("Envious Adaption")
+  );
+  const names = [...effectDescriptions.keys()].sort(
+    (first, second) => second.length - first.length
+  );
+  const pattern = new RegExp(
+    `\\[([^\\]]+)\\]|(^|[^A-Za-z0-9_])(${names
+      .map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+      .join("|")})(?![A-Za-z0-9_])`,
+    "gi"
+  );
+
+  const withoutEffectHeadings = (description, effectName) =>
+    description.replace(
+      new RegExp(
+        `^\\s*\\[${effectName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\]\\s*`,
+        "i"
+      ),
+      ""
+    );
+  const source = String(text);
+  let html = "";
+  let lastIndex = 0;
+  for (const match of source.matchAll(pattern)) {
+    const [value, bracketedName, prefix, bareName] = match;
+    const name = bracketedName || bareName;
+    const description =
+      effectDescriptions.get(name) ||
+      effectDescriptions.get(
+        [...effectDescriptions.keys()].find(
+          (effectName) => effectName.toLowerCase() === name.toLowerCase()
+        )
+      ) ||
+      "Chưa có mô tả chi tiết cho hiệu ứng này.";
+    html += esc(source.slice(lastIndex, match.index));
+    html += `${esc(prefix || "")}<span class="pet-effect-term" tabindex="0">${esc(
+      name
+    )}<span class="pet-effect-tooltip" role="tooltip"><span>${esc(
+      withoutEffectHeadings(description, name)
+    )}</span></span></span>`;
+    lastIndex = match.index + value.length;
+  }
+  return html + esc(source.slice(lastIndex));
 }
 
 function roman(t) {
@@ -861,8 +1024,7 @@ function renderPets() {
   const statsSection = sections.find((section) => section.title === "Thông tin chiến đấu");
   const skills = sections.filter((section) => section.title.startsWith("Kỹ năng"));
   const passives = sections.filter(
-    (section) =>
-      section.title.startsWith("Nội tại") || section.title.startsWith("Hiệu ứng")
+    (section) => section.title.startsWith("Nội tại")
   );
   const skill = skills[selectedPetSkill] || skills[0];
   const infoContent =
@@ -934,7 +1096,7 @@ function renderPets() {
               selectedPetSkill === 4
                 ? '<div class="pet-skill-copy">Chưa có thông tin phòng thủ.</div>'
                 : skill
-                ? `<div class="pet-skill-heading">${esc(skill.title)}</div><div class="pet-skill-copy">${colorPetTriggers(skill.content)}</div>`
+                ? `<div class="pet-skill-heading">${esc(skill.title)}</div><div class="pet-skill-copy">${colorPetTriggers(renderPetEffectText(skill.content, sections), true)}</div>`
                 : '<div class="pet-skill-copy">Chưa có thông tin kỹ năng.</div>'
             }
           </div>
