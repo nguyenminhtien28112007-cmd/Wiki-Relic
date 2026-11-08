@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Items — Relic Archive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="item">
+  <header class="top"><h1>Relic Archive</h1></header>
+  <nav class="tabs" aria-label="Main navigation">
+    <a class="tab" href="index.html">Relics</a>
+    <a class="tab" href="relic-crafting.html">Relic Crafting</a>
+    <a class="tab" href="character.html">Character</a>
+    <a class="tab" href="lore-archived.html">Lore Archived</a>
+    <a class="tab active" href="item.html" aria-current="page">Item</a>
+    <a class="tab" href="pet.html">Pet</a>
+  </nav>
+  <main>
+    <div class="filterrow">
+      <button class="filtericon" type="button" title="Filter">▽</button>
+      <input class="control" id="searchItemTrait" placeholder="Search item type / description...">
+      <input class="control" id="searchItemName" placeholder="Filter by item name...">
+    </div>
+    <div class="iconrow" id="itemTypeFilters"></div>
+    <button class="smallbtn hidden" id="itemBackBtn" type="button">← Quay lại danh sách</button>
+    <div class="item-detail hidden" id="itemShowcase"></div>
+    <h2 class="sectiontitle" id="itemCountTitle">Items</h2>
+    <div id="itemList" class="item-list"></div>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pets — Relic Archive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="pet">
+  <header class="top"><h1>Relic Archive</h1></header>
+  <nav class="tabs" aria-label="Main navigation">
+    <a class="tab" href="index.html">Relics</a>
+    <a class="tab" href="relic-crafting.html">Relic Crafting</a>
+    <a class="tab" href="character.html">Character</a>
+    <a class="tab" href="lore-archived.html">Lore Archived</a>
+    <a class="tab" href="item.html">Item</a>
+    <a class="tab active" href="pet.html" aria-current="page">Pet</a>
+  </nav>
+  <main>
+    <div class="showcase pet-showcase" id="petShowcase"></div>
+    <h2 class="sectiontitle" id="petCountTitle">Pets</h2>
+    <div class="filterrow">
+      <button class="filtericon" type="button" title="Pet filter" aria-label="Pet filter">▽</button>
+      <input class="control" id="searchPetTrait" placeholder="Search pet details...">
+      <input class="control" id="searchPetName" placeholder="Filter by pet name...">
+    </div>
+    <div class="gallery pet-gallery" id="petList"></div>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>

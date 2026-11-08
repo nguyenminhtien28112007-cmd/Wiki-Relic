@@ -221,25 +221,42 @@ Dạng trưởng thành — Level 100
       {
         title: "Nội tại — Envious Adapting",
         content: `Nội tại được cường hóa theo số kẻ địch nhiều hơn 1; tối đa 9 kẻ địch.
+
 Khi tấn công 1/2/3 lần trong một lượt, nhận lần lượt 1/2/3 stack [Envious Adapting].
+
 Khi gây sát thương, sao chép 5% chỉ số của toàn bộ kẻ địch trên sân trong phần còn lại của trận (mỗi trận một lần). Tỉ lệ sao chép tăng lên 7%/9%/11% khi có 3/6/9 kẻ địch trên sân.
+
 Nếu chủ nhân nhận sát thương vượt quá 50% máu tối đa của bản thân, tiêu hao 1 stack [Envious Adapting] của Leviathan và nhận [Scales Serpent].`
       },
       {
         title: "Nội tại — Hate, Hate, Hate, HATE...!!!",
         content: `Nếu có boss phụ hoặc boss chính trên sân, Leviathan nhận thêm 3 stack [Hatred] cho mỗi boss; tối đa cộng thêm 15 stack.
+
 Khi tiêu diệt kẻ địch, áp [Drowning Abyss] lên toàn bộ kẻ địch trên sân.
+
 Khi kẻ địch có [Drowning Abyss], Leviathan gây thêm sát thương chuẩn bằng 10% sức mạnh của bản thân.
-Cuối mỗi lượt, ngẫu nhiên nhận một hiệu ứng chưa nhận: Protection, Damage Up, Speed Up, Defense Up hoặc Increase Health Maximum. Nhận tối đa 3 hiệu ứng ngẫu nhiên.`
+
+Cuối mỗi lượt, ngẫu nhiên nhận một hiệu ứng chưa nhận: 
+• [Protection]
+• [Damage Up]
+• [Defense Up]
+• [Increase Health Maximum] 
+Nhận tối đa 3 hiệu ứng ngẫu nhiên. Nếu bản thân có 6 stack [Till They All Buried In Hell!!!], số hiệu ứng tối đa ngẫu nhiên nhận được tăng thêm 1. Nếu hiệu ứng nhận bị trùng sẽ cộng dồn stack cho hiệu ứng đó`
       },
       {
         title: "Nội tại — Last of Its Kind",
         content: `Nội tại được cường hóa theo mỗi stack [Till They All Buried In Hell!!!], tối đa 6 stack.
+
 Khi có [Till They All Buried In Hell!!!], nhận khiên bằng 20% máu bản thân cho mỗi 2 stack [Hell Fire], tối đa 60% máu (tối đa 6 potency [Hell Fire]).
-Với mỗi 2 stack [Till They All Buried In Hell!!!], chuyển 50% máu bản thân thành sức mạnh mỗi lần sử dụng kỹ năng.
+
+Với mỗi 2 stack [Till They All Buried In Hell!!!], chuyển 50% máu bản thân thành sức mạnh mỗi lần sử dụng kỹ năng; Sức mạnh nhận được bằng với % số máu được chuyển .
+
 Với mỗi stack [Till They All Buried In Hell!!!], máu tăng 5%.
+
 Nếu có [Hell Fire], giảm Defense của bản thân một lượng bằng (phần trăm khiên nhận được / số potency [Hell Fire] trên bản thân)% để nhận ít hơn 50% sát thương từ mọi nguồn.
+
 Nếu có 6 stack [Till They All Buried In Hell!!!], chuyển kỹ năng đơn mục tiêu thành kỹ năng đánh toàn bộ mục tiêu trên sân; hiệu ứng này sử dụng một lần mỗi 4 lượt.
+
 Nhận thêm 20% sát thương từ vũ khí có thuộc tính Thần.`
       },
       {
@@ -261,32 +278,33 @@ Khi đánh trúng:
         content: `Mục tiêu: 3 | Sát thương: 5% sức mạnh bản thân
 
 Trước khi tấn công:
-• Nhận 5 stack [Water Damage Up].
-• Nếu bản thân có trên 5 Fragile, số mục tiêu tăng lên 5.
-• Nếu đòn này không được thực hiện, Leviathan nhận 2 stack Damage Up.
+• Nhận 5 stack [Water Damage Up]
+• Nếu bản thân có trên 5 Fragile, số mục tiêu tăng lên 5
+• Nếu đòn này không được thực hiện, Leviathan nhận 2 stack [Damage Up]
 
 Khi sử dụng:
-• Nếu gây sát thương chí mạng, sử dụng lại kỹ năng này thêm 1 lần.
+• Nếu gây sát thương chí mạng, sử dụng lại kỹ năng này thêm 1 lần
 
 Khi đánh trúng:
-• Áp [Water Weakness].
-• Áp [Tremor] 2 potency và 2 count.
-• Chuyển [Tremor] 2 potency và 2 count thành [Abyssal Echoes].`
+• Áp [Water Weakness]
+• Áp [Tremor] 2 potency và 2 count
+• Chuyển [Tremor] 2 potency và 2 count thành [Abyssal Echoes]`
       },
       {
         title: "Kỹ năng S2 — Jaw of the Deep Abyss",
         content: `Mục tiêu: 2 | Sát thương: 35% sức mạnh bản thân
 
 Khi sử dụng:
-• Tiêu hao tối đa 25 stack [Hatred]. Mỗi stack tiêu hao tăng 2% sát thương, tối đa 50%.
-• Với mỗi 5 stack [Hatred] tiêu hao, nhận 1 [Blind Obsession], tối đa 5 stack nhận được.
-• Tiêu hao [Poise] 2 potency; nếu thành công, tỉ lệ chí mạng tăng 50%.
-• Tiêu hao [Poise] 20 potency để nhận [World Tyrant] 1 potency.
+• Tiêu hao tối đa 10 stack [Hatred]. Mỗi stack tiêu hao tăng 2% sát thương; Tối đa 50%
+• Với mỗi 2 stack [Hatred] tiêu hao, nhận 1 [Blind Obsession], tối đa 5 stack nhận được
+• Tiêu hao [Poise] 15 potency; nếu thành công, tỉ lệ chí mạng tăng 50%
+• Tiêu hao [Poise] 20 potency để nhận [World Tyrant] 1 stack
 
 Khi đánh trúng:
-• Kích hoạt [Abyssal Echoes] 2 lần, sau đó giảm 1 potency [Abyssal Echoes].
-• Áp [Nightmare] và 1 Fragile lên kẻ địch.
-• Nhận 3 stack [Till They All Buried In Hell!!!].`
+• Kích hoạt [Abyssal Echoes] 2 lần, sau đó giảm 1 potency [Abyssal Echoes]
+• Áp [Nightmare] và 1 stack [Fragile] lên kẻ địch
+• Nhận 1 stack [Double Damage Up]
+• Nhận 3 stack [Till They All Buried In Hell!!!]`
       },
       {
         title: "Kỹ năng S3 — To Tell Them. I HATE HATE HATE HATE...THEM ALL!!!!",
@@ -294,24 +312,36 @@ Khi đánh trúng:
 
 Trước khi tấn công:
 • Tiêu hao tối đa 50 stack [Hatred] và 50 stack [Envious Adapting]. Mỗi 5 stack tiêu hao của từng hiệu ứng tăng sát thương theo số stack [Nightmare] trên kẻ địch; tổng mức tăng tối đa 200%.
-• Tiêu hao toàn bộ [Blind Obsession]. Với mỗi 2 stack tiêu hao, gây sát thương chuẩn bằng 100% sức mạnh bản thân nhân với số stack [Till They All Buried In Hell!!!].
-• Kích hoạt [Abyssal Echoes] 20 lần trên kẻ địch; mỗi lần kích hoạt áp [Mark of Tyrant's] lên kẻ địch.
+• Tiêu hao toàn bộ [Blind Obsession] để chuyển toàn bộ sát thương gây ra thành sát thương chuẩn
+• Kích hoạt [Abyssal Echoes] 20 lần trên kẻ địch; mỗi 5 lần kích hoạt, áp 2 stack [Mark of Tyrant's] lên kẻ địch
 
 Khi sử dụng:
-• Sát thương luôn được đặt bằng 100% sức mạnh bản thân, bao gồm cả sức mạnh sau khi được tăng cường.
-• Đòn đánh luôn chí mạng và không thể bị ảnh hưởng bởi hiệu ứng bất lợi làm giảm tỉ lệ chí mạng.
+• Sát thương luôn được đặt bằng 100% sức mạnh bản thân, bao gồm cả sức mạnh sau khi được tăng cường
+• Đòn đánh luôn chí mạng và không thể bị ảnh hưởng bởi hiệu ứng bất lợi làm giảm tỉ lệ chí mạng
 • Sát thương chí mạng được đặt thành 10x.
-• Áp 5 stack [HP Decreased] lên kẻ địch.
-• Trong lúc sử dụng kỹ năng, Leviathan không thể chết và không thể bị dính hiệu ứng bất lợi.
+• Áp 5 stack [HP Decreased] lên kẻ địch
+• Trong lúc sử dụng kỹ năng, Leviathan không thể chết và không thể bị dính hiệu ứng bất lợi
 
 Khi đánh trúng:
-• Bỏ qua toàn bộ chỉ số phòng thủ và xóa toàn bộ buff của kẻ địch.
-• Áp [Stun], [Nightmare], [Freeze], [Drowning] và [Drowning Abyss] 20 potency, 25 count.
+• Bỏ qua toàn bộ chỉ số phòng thủ và xóa toàn bộ buff của kẻ địch
+• Áp 1 stack [Stun], 1 stack [Nightmare], 1 stack [Freeze], 1 stack [Drowning]
+• Áp [Drowning Abyss] 10 potency và 10 count lên kẻ địch
 • Kích hoạt toàn bộ [Abyssal Echoes] trên kẻ địch. Mỗi 5 lần kích hoạt, gây sát thương bằng potency [Abyssal Echoes] nhân với potency [Drowning Abyss]; hiệu ứng sát thương này tối đa 2 lần.
 
 Khi kết thúc:
-• Đặt toàn bộ kẻ địch vào trạng thái [Between-Line Death].
-• Leviathan không thể tấn công trong 10 lượt tiếp theo.`
+• Đặt toàn bộ kẻ địch vào trạng thái [Between-Line Death]
+• Leviathan không thể tấn công trong 10 lượt tiếp theo`
+      },
+      {
+        title: "Kỹ năng Defense — Guard",
+        content: `Mỗi lượt có thể sử dụng Guard tối đa 5 lần
+
+ Nếu chủ nhân có số xúc xắc ít hơn kẻ địch, Leviathan dùng Guard thay chủ nhân và nhận sát thương thay.
+
+ Nếu Guard thành công, sử dụng S1-2; tối đa 5 lần mỗi lượt.
+
+ Khi sử dụng Guard, Leviathan được coi như đã sử dụng 1 lượt.
+`
       },
       {
         title: "Hiệu ứng — Envious Adaption",
@@ -343,6 +373,9 @@ Max potency và count: 100
 
 - Khi bị tấn công giảm (số lần bị tấn công x mỗi 25 potency [Drowning Abyss])% chỉ số phòng thủ; số lần tấn công được tính cả Leviathan và đồng minh
 - Mỗi 10 count, giảm 1% máu của kẻ địch
+- Mỗi 5 stack, khi kẻ địch tấn công, sát thương gây ra giảm 1%
+- Sát thương hệ nước tăng 1% mỗi 10 potency
+- Sát thương hệ bóng tối tăng 5% mỗi 20 count
 
 Giảm 20 count tại mỗi lượt kết thúc`
       },
@@ -376,15 +409,6 @@ Max potency và count: 100
 - Cuối mỗi lượt kết thúc, nhận sát thương lửa bằng (số potency x 5 count)
 
 Giảm 10 count tại mỗi lượt kết thúc`
-      },
-      {
-        title: "Hiệu ứng — Drowning Abyss (potency/count 75)",
-        content: `[Drowning Abyss]
-Max potency và count: 75
-
-- Mỗi 5 stack, khi kẻ địch tấn công, sát thương gây ra giảm 1%
-- Sát thương hệ nước tăng 1% mỗi 10 potency
-- Sát thương hệ bóng tối tăng 5% mỗi 20 count`
       },
       {
         title: "Hiệu ứng — Abyssal Echoes",
@@ -477,12 +501,112 @@ Giảm 1 count mỗi lượt kết thúc`
       "Crushing Tide applies 2 potency and 2 count, then converts that Tremor into Abyssal Echoes."
     ],
     [
+      "Protection",
+      `[Protection]
+Max stack: 10
+
+- Mỗi stack, sát thương nhận giảm 10%; tối đa giảm 100%
+
+Mất toàn bộ stack tại mỗi lượt kết thúc`
+    ],
+    [
+      "Damage Up",
+      `[Damage Up]
+Max stack: 10
+
+- Mỗi stack, sát thương gây ra tăng 10%; tối đa tăng 100%
+
+Mất toàn bộ stack tại mỗi lượt kết thúc`
+    ],
+    [
+      "Defense Up",
+      `[Defense Up]
+Max stack: 10
+
+- Mỗi stack, chỉ số phòng thủ tăng 10%; tối đa tăng 100%
+
+Mất toàn bộ stack tại mỗi lượt kết thúc`
+    ],
+    [
+      "Increase Health Maximum",
+      `[Increase Health Maximum]
+Max stack: 10
+
+- Mỗi stack, chỉ số máu tăng 10%; tối đa tăng 100%
+
+Mất toàn bộ stack tại mỗi lượt kết thúc`
+    ],
+    [
+      "Stun",
+      `[Stun]
+Max stack: 1
+
+- Mất 1 lượt`
+    ],
+    [
+      "Nightmare",
+      `[Nightmare]
+Max stack: 2
+
+- Mỗi stack, số lượt bị mất tăng thêm 1
+- Ở 2 stack, giới hạn stack của các hiệu ứng gây mất lượt tăng thêm 2 và số stack bị mất giảm 1
+
+Giảm 1 stack tại mỗi lượt bị mất do hiệu ứng mất lượt gây ra`
+    ],
+    [
+      "Freeze",
+      `[Freeze]
+Max stack: 10
+
+- Mỗi stack, sát thương hệ băng nhận thêm 10%
+- Ở 10 stack, mất 1 lượt
+
+Giảm 5 stack tại mỗi lần kết thúc lượt`
+    ],
+    [
+      "Drowning",
+      `[Drowning]
+Max stack: 10
+
+- Mỗi 5 stack, sức mạnh giảm 5%
+- Mỗi 2 stack, sát thương nước nhận thêm 5%
+
+Giảm 2 stack tại mỗi lượt kết thúc`
+    ],
+    [
+      "Scales Serpent",
+      `[Scales Serpent]
+Max stack: 10
+
+- Mỗi 2 stack, sát thương nhận giảm 10%
+- Mỗi 5 stack, sát thương gây ra tăng 20%
+- Ở 10 stack, khi đánh trúng kẻ địch, Leviathan sử dụng S1-2 lên kẻ địch đó
+
+Hiệu ứng này không thể áp dụng lên Leviathan
+
+Giảm 1 stack mỗi lần Leviathan sử dụng S1-2`
+    ],
+    [
       "Blind Obsession",
-      "Jaw of the Deep Abyss grants 1 stack for every 5 Hatred consumed, up to 5 stacks."
+      `[Blind Obsession]
+Max stack: 10
+
+- Mỗi stack giảm 10% độ chính xác của Leviathan
+- Mỗi 2 stack, Leviathan nhận 1 [Fragile]
+- Mỗi 5 stack, Leviathan gây thêm 50% sát thương lên kẻ địch có nhiều máu nhất
+
+Mỗi lần đánh hụt, sát thương tăng 100%; cộng dồn mỗi lần hụt cho đến khi đánh trúng, tối đa 1000% cộng dồn
+
+Tiêu hao toàn bộ số stack khi đánh trúng
+`
     ],
     [
       "World Tyrant",
-      "Jaw of the Deep Abyss grants 1 potency when 20 Poise potency is consumed."
+      `[World Tyrant]
+Max stack: 2
+
+- Mỗi stack, Leviathan nhận 1 lượt thêm
+- Khi có 2 stack, Leviathan tiêu hao 1 stack để dùng S1-1; tối đa 2 lần mỗi lượt`
     ],
     [
       "Water Weakness",
@@ -522,11 +646,22 @@ Mất toàn bộ tại mỗi lượt kết thúc`
     ],
     [
       "Mark of Tyrant's",
-      "Applied to enemies each time S3 activates Abyssal Echoes."
+      `[Mark of Tyrant's]
+Max stack: 8
+
+- Mỗi 2 stack, đơn vị mang hiệu ứng nhận thêm 5% sát thương; tối đa 40%
+- Mỗi 4 stack, xóa ngẫu nhiên 4 hiệu ứng có lợi trên đơn vị mang hiệu ứng
+
+Giảm 2 stack vào cuối mỗi lượt`
     ],
     [
       "HP Decreased",
-      "S3 applies 5 stacks to enemies when used."
+      `[HP Decreased]
+Max stack: 10
+
+- Mỗi stack, máu giảm 10%; tối đa giảm 50%
+
+Giảm 5 stack tại mỗi lượt kết thúc`
     ]
   ]);
   sections
@@ -1022,7 +1157,10 @@ function renderPets() {
   const infoSection = sections.find((section) => section.title === "Thông tin cơ bản");
   const growthSection = sections.find((section) => section.title === "Các thể phát triển");
   const statsSection = sections.find((section) => section.title === "Thông tin chiến đấu");
-  const skills = sections.filter((section) => section.title.startsWith("Kỹ năng"));
+  const skills = sections.filter((section) => section.title.startsWith("Kỹ năng S"));
+  const defense = sections.find((section) =>
+    section.title.startsWith("Kỹ năng Defense")
+  );
   const passives = sections.filter(
     (section) => section.title.startsWith("Nội tại")
   );
@@ -1042,7 +1180,6 @@ function renderPets() {
                 ? `<img class="pet-portrait-image" src="${esc(profile.image)}" alt="${esc(name)}">`
                 : '<div class="pet-portrait-art" aria-hidden="true">🐉</div>'
             }
-            <div class="pet-portrait-caption">${esc(name)}</div>
           </div>
           <div class="pet-info-tabs" role="tablist" aria-label="Thông tin Pet">
             <button type="button" class="pet-wiki-tab ${selectedPetInfoTab === "general" ? "active" : ""}" data-pet-info-tab="general" role="tab" aria-selected="${selectedPetInfoTab === "general"}">Thông tin chung</button>
@@ -1094,7 +1231,9 @@ function renderPets() {
           <div class="pet-skill-panel" role="tabpanel">
             ${
               selectedPetSkill === 4
-                ? '<div class="pet-skill-copy">Chưa có thông tin phòng thủ.</div>'
+                ? defense
+                  ? `<div class="pet-skill-heading">${esc(defense.title)}</div><div class="pet-skill-copy">${colorPetTriggers(renderPetEffectText(defense.content, sections), true)}</div>`
+                  : '<div class="pet-skill-copy">Chưa có thông tin phòng thủ.</div>'
                 : skill
                 ? `<div class="pet-skill-heading">${esc(skill.title)}</div><div class="pet-skill-copy">${colorPetTriggers(renderPetEffectText(skill.content, sections), true)}</div>`
                 : '<div class="pet-skill-copy">Chưa có thông tin kỹ năng.</div>'
@@ -1108,7 +1247,7 @@ function renderPets() {
                   ({ title, content }, index) => `
                     <details class="pet-passive" ${index === 0 ? "open" : ""}>
                       <summary>${esc(title)}</summary>
-                      <div class="pet-passive-copy">${colorPetTriggers(content)}</div>
+                      <div class="pet-passive-copy">${colorPetTriggers(renderPetEffectText(content, sections), true)}</div>
                     </details>
                   `
                 )
@@ -1178,6 +1317,7 @@ function openForm(r = null) {
   $("modal").classList.add("show");
 }
 
+if (document.body.dataset.page === "relics") {
 $("form").onsubmit = (e) => {
   e.preventDefault();
   let old = e.target.dataset.id;
@@ -1242,36 +1382,6 @@ $("closeModal").onclick = $("cancelBtn").onclick = () =>
   $("modal").classList.remove("show");
 
 $("searchFilter").oninput = $("searchTrait").oninput = renderGroups;
-$("searchItemName").oninput = $("searchItemTrait").oninput = renderItems;
-$("searchPetName").oninput = $("searchPetTrait").oninput = renderPets;
-
-$("itemTypeFilters").onclick = (e) => {
-  const button = e.target.closest("[data-item-type]");
-  if (!button) return;
-  activeItemType = button.dataset.itemType;
-  renderItemPage();
-};
-
-$("itemList").onclick = (e) => {
-  const card = e.target.closest("[data-item-index]");
-  if (!card) return;
-  selectedItemIndex = Number(card.dataset.itemIndex);
-  renderItemPage();
-};
-
-$("itemList").onkeydown = (e) => {
-  if (e.key !== "Enter" && e.key !== " ") return;
-  const card = e.target.closest("[data-item-index]");
-  if (!card) return;
-  e.preventDefault();
-  selectedItemIndex = Number(card.dataset.itemIndex);
-  renderItemPage();
-};
-
-$("itemBackBtn").onclick = () => {
-  selectedItemIndex = null;
-  renderItemPage();
-};
 
 $("iconFilters").onclick = (e) => {
   let b = e.target.closest("button");
@@ -1365,66 +1475,99 @@ $("importFile").onchange = async (e) => {
   e.target.value = "";
 };
 
-document.querySelector(".tabs").onclick = (e) => {
-  const tab = e.target.closest("[data-view]");
-  if (!tab) return;
+function activateViewFromLocation() {
+  const requestedView = window.location.hash.slice(1);
+  const section = requestedView && $(requestedView);
+  activeView = section && section.parentElement === document.querySelector("main")
+    ? requestedView
+    : "relicPage";
 
-  activeView = tab.dataset.view;
   document.querySelectorAll(".tabs .tab").forEach((item) => {
-    item.classList.toggle("active", item === tab);
+    const isActive = item.dataset.view === activeView;
+    item.classList.toggle("active", isActive);
+    if (isActive) item.setAttribute("aria-current", "page");
+    else item.removeAttribute("aria-current");
   });
   document.querySelectorAll("main > section[id]").forEach((section) => {
     section.classList.toggle("hidden", section.id !== activeView);
   });
   if (activeView === "characterPage") renderCharacters();
   if (activeView === "petPage") renderPets();
-};
-
-$("characterList").onclick = (e) => {
-  const button = e.target.closest("[data-character]");
-  if (!button) return;
-  selectedCharacter = Number(button.dataset.character);
-  renderCharacters();
-};
-
-$("characterDetails").onclick = (e) => {
-  if (!e.target.closest(".character-close")) return;
-  selectedCharacter = null;
-  renderCharacters();
-};
-
-$("petList").onclick = (e) => {
-  const button = e.target.closest("[data-pet]");
-  if (!button) return;
-  selectedPet = Number(button.dataset.pet);
-  selectedPetInfoTab = "general";
-  selectedPetSkill = 0;
-  renderPets();
-};
-
-$("petList").onkeydown = (e) => {
-  if (e.key !== "Enter" && e.key !== " ") return;
-  const card = e.target.closest("[data-pet]");
-  if (!card) return;
-  e.preventDefault();
-  selectedPet = Number(card.dataset.pet);
-  selectedPetInfoTab = "general";
-  selectedPetSkill = 0;
-  renderPets();
-};
-
-$("petShowcase").onclick = (e) => {
-  const infoTab = e.target.closest("[data-pet-info-tab]");
-  const skillTab = e.target.closest("[data-pet-skill]");
-  const skillMainTab = e.target.closest("[data-pet-skill-main]");
-  if (infoTab) selectedPetInfoTab = infoTab.dataset.petInfoTab;
-  if (skillTab) selectedPetSkill = Number(skillTab.dataset.petSkill);
-  if (skillMainTab) {
-    const mainSkill = skillMainTab.dataset.petSkillMain;
-    selectedPetSkill = { 1: 0, 2: 2, 3: 3, defense: 4 }[mainSkill];
-  }
-  if (infoTab || skillTab || skillMainTab) renderPets();
-};
+}
 
 render();
-renderItemPage();
+} else if (document.body.dataset.page === "pet") {
+  $("searchPetName").oninput = $("searchPetTrait").oninput = renderPets;
+  $("petList").onclick = (e) => {
+    const card = e.target.closest("[data-pet]");
+    if (!card) return;
+    selectedPet = Number(card.dataset.pet);
+    selectedPetInfoTab = "general";
+    selectedPetSkill = 0;
+    renderPets();
+  };
+  $("petList").onkeydown = (e) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    const card = e.target.closest("[data-pet]");
+    if (!card) return;
+    e.preventDefault();
+    selectedPet = Number(card.dataset.pet);
+    selectedPetInfoTab = "general";
+    selectedPetSkill = 0;
+    renderPets();
+  };
+  $("petShowcase").onclick = (e) => {
+    const infoTab = e.target.closest("[data-pet-info-tab]");
+    const skillTab = e.target.closest("[data-pet-skill]");
+    const skillMainTab = e.target.closest("[data-pet-skill-main]");
+    if (infoTab) selectedPetInfoTab = infoTab.dataset.petInfoTab;
+    if (skillTab) selectedPetSkill = Number(skillTab.dataset.petSkill);
+    if (skillMainTab) {
+      selectedPetSkill = { 1: 0, 2: 2, 3: 3, defense: 4 }[
+        skillMainTab.dataset.petSkillMain
+      ];
+    }
+    if (infoTab || skillTab || skillMainTab) renderPets();
+  };
+  renderPets();
+} else if (document.body.dataset.page === "character") {
+  $("characterList").onclick = (e) => {
+    const button = e.target.closest("[data-character]");
+    if (!button) return;
+    selectedCharacter = Number(button.dataset.character);
+    renderCharacters();
+  };
+  $("characterDetails").onclick = (e) => {
+    if (!e.target.closest(".character-close")) return;
+    selectedCharacter = null;
+    renderCharacters();
+  };
+  renderCharacters();
+} else if (document.body.dataset.page === "item") {
+  $("searchItemName").oninput = $("searchItemTrait").oninput = renderItems;
+  $("itemTypeFilters").onclick = (e) => {
+    const button = e.target.closest("[data-item-type]");
+    if (!button) return;
+    activeItemType = button.dataset.itemType;
+    renderItemPage();
+  };
+  $("itemList").onclick = (e) => {
+    const card = e.target.closest("[data-item-index]");
+    if (!card) return;
+    selectedItemIndex = Number(card.dataset.itemIndex);
+    renderItemPage();
+  };
+  $("itemList").onkeydown = (e) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    const card = e.target.closest("[data-item-index]");
+    if (!card) return;
+    e.preventDefault();
+    selectedItemIndex = Number(card.dataset.itemIndex);
+    renderItemPage();
+  };
+  $("itemBackBtn").onclick = () => {
+    selectedItemIndex = null;
+    renderItemPage();
+  };
+  renderItemPage();
+}
